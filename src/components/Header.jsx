@@ -18,7 +18,7 @@ const Header = () => {
     <header className="header">
       <div className="container header-inner">
         <Link to="/" className="logo">
-          <span className="logo-mark">A</span>
+        <img src="/public/logo.png" alt="A" className="logo-mark" />
           <span className="logo-text">Aizantra Intelligence</span>
         </Link>
 

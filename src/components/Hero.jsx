@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 const Hero = () => (
   <section className="hero">
     <div className="container hero-grid">
+      {/* LEFT COLUMN (desktop) / FULL WIDTH (mobile) */}
       <div className="hero-text">
         <h1>Engineering Intelligence. Accelerating Transformation.</h1>
         <p>
@@ -11,6 +12,7 @@ const Hero = () => (
           through AI strategy, enterprise-grade product development, data modernization,
           and intelligent automation.
         </p>
+
         <div className="hero-actions">
           <Link to="/contact" className="btn btn-primary">
             Request a Consultation
@@ -19,6 +21,19 @@ const Hero = () => (
             View Case Studies
           </Link>
         </div>
+
+        {/* MOBILE CARDS: shown only on small screens */}
+        <div className="hero-visual hero-visual-mobile">
+          <div className="hero-card hero-card-primary">
+            <h3>AI Strategy</h3>
+            <p>Align data, process, people, and culture with execution.</p>
+          </div>
+          <div className="hero-card hero-card-secondary">
+            <h3>Product Engineering</h3>
+            <p>Enterprise-grade platforms built for scale and resilience.</p>
+          </div>
+        </div>
+
         <ul className="hero-stats">
           <li>
             <span className="hero-stat-label">25+ years</span>
@@ -34,7 +49,9 @@ const Hero = () => (
           </li>
         </ul>
       </div>
-      <div className="hero-visual">
+
+      {/* RIGHT COLUMN CARDS: shown only on desktop */}
+      <div className="hero-visual hero-visual-desktop">
         <div className="hero-card hero-card-primary">
           <h3>AI Strategy</h3>
           <p>Align data, process, people, and culture with execution.</p>
