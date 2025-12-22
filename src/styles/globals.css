@@ -138,6 +138,34 @@ p {
   max-width: 620px;
 }
 
+/* Core values tags and explanatory text */
+.tag-row {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  margin: 0.75rem 0 1rem 0;
+}
+
+.tag {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.45rem 0.9rem;
+  border-radius: 999px;
+  background: linear-gradient(90deg, rgba(99,102,241,0.12), rgba(6,182,212,0.06));
+  color: var(--text-primary);
+  font-weight: 600;
+  font-size: 0.9rem;
+  border: 1px solid rgba(148,163,184,0.06);
+}
+
+.section-subtext {
+  margin-top: 0.5rem;
+  color: var(--text-secondary);
+  max-width: 760px;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
 /* Grid helpers */
 
 .grid {
@@ -199,6 +227,122 @@ p {
 .card ul li::before {
   content: '→';
   color: var(--accent-primary-bright);
+}
+
+/* Insights list spacing */
+.list-cards {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 3rem; /* increased spacing between insight cards */
+}
+
+@media (max-width: 640px) {
+  .list-cards {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+}
+
+/* Contact page form & details refinements */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 100%;
+}
+
+.contact-form .form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.contact-form label {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border-radius: 10px;
+  border: 1px solid var(--border-color-light);
+  background: rgba(255,255,255,0.02);
+  color: var(--text-primary);
+  outline: none;
+  transition: box-shadow 160ms ease, border-color 160ms ease, transform 120ms ease;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: var(--text-muted);
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: var(--accent-primary);
+  box-shadow: 0 6px 18px rgba(99,102,241,0.08);
+  transform: translateY(-2px);
+}
+
+.contact-form .btn {
+  align-self: flex-start;
+  margin-top: 0.25rem;
+}
+
+.form-success {
+  margin-top: 0.75rem;
+  padding: 0.6rem 0.9rem;
+  background: linear-gradient(90deg, rgba(16,185,129,0.12), rgba(16,185,129,0.06));
+  border-radius: 8px;
+  color: var(--accent-success);
+  font-weight: 600;
+  border: 1px solid rgba(16,185,129,0.12);
+}
+
+.contact-details {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contact-details h3 {
+  margin-bottom: 0.25rem;
+}
+
+.contact-info-block {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+}
+
+.contact-info-label {
+  min-width: 110px;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.contact-info-value {
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+@media (max-width: 900px) {
+  .grid.grid-2 {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .contact-form .btn {
+    width: 100%;
+    align-self: stretch;
+  }
 }
 
 /* Header */
@@ -481,7 +625,7 @@ p {
 }
 
 .hero-card-secondary {
-  background: radial-gradient(circle at top left, #22c55e, #0f172a 60%);
+  background: radial-gradient(circle at top left, #4f46e5, #0b1120 65%);
 }
 
 .hero-card h3 {
@@ -726,4 +870,115 @@ p {
     padding: 2.5rem 0 1.5rem;
     margin-top: 3rem;
   }
+}
+
+/* ===========================
+   SCROLL-TRIGGERED ANIMATIONS
+   Elements animate only after receiving the `in-view` class
+   (added by IntersectionObserver helper)
+   =========================== */
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInDown {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideInLeft {
+  from { opacity: 0; transform: translateX(-28px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes slideInRight {
+  from { opacity: 0; transform: translateX(28px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes zoomIn {
+  from { opacity: 0; transform: scale(.98); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+@keyframes pulseOpacity {
+  0%,100% { opacity: 1; }
+  50% { opacity: 0.7; }
+}
+
+@keyframes shimmer {
+  0% { background-position: -800px 0; }
+  100% { background-position: 800px 0; }
+}
+
+@keyframes wiggle {
+  0%,100% { transform: rotate(-1deg); }
+  50% { transform: rotate(1deg); }
+}
+
+/* Utility animate classes: they only run when paired with .in-view */
+.animate-fade-up { will-change: transform, opacity; }
+.in-view.animate-fade-up { animation: fadeInUp 640ms cubic-bezier(.2,.9,.2,1) both; }
+
+.animate-fade-down { will-change: transform, opacity; }
+.in-view.animate-fade-down { animation: fadeInDown 640ms cubic-bezier(.2,.9,.2,1) both; }
+
+.animate-fade { will-change: opacity; }
+.in-view.animate-fade { animation: fadeIn 560ms ease both; }
+
+.animate-slide-left { will-change: transform, opacity; }
+.in-view.animate-slide-left { animation: slideInLeft 620ms cubic-bezier(.2,.9,.2,1) both; }
+
+.animate-slide-right { will-change: transform, opacity; }
+.in-view.animate-slide-right { animation: slideInRight 620ms cubic-bezier(.2,.9,.2,1) both; }
+
+.animate-zoom { will-change: transform, opacity; }
+.in-view.animate-zoom { animation: zoomIn 520ms cubic-bezier(.2,.9,.2,1) both; }
+
+.animate-pulse { will-change: opacity; }
+.in-view.animate-pulse { animation: pulseOpacity 2.2s ease-in-out infinite; }
+
+.animate-wiggle { will-change: transform; }
+.in-view.animate-wiggle { animation: wiggle 1.6s ease-in-out infinite; }
+
+/* initial hidden state for elements we want to animate on-scroll */
+.animate-on-scroll { opacity: 0; transform: translateY(12px); }
+.in-view.animate-on-scroll { opacity: 1; transform: none; }
+
+/* prevent accidental auto-animations on load */
+h1, h2, h3, p, .nav, .logo, .logo-icon, .btn, .card, .hero-stats li, .footer { animation: none !important; }
+
+/* shimmer utility for placeholders */
+.shimmer {
+  background: linear-gradient(90deg, rgba(255,255,255,0.03) 0%, rgba(255,255,255,0.08) 50%, rgba(255,255,255,0.03) 100%);
+  background-size: 1600px 100%;
+  animation: shimmer 1.6s linear infinite;
+}
+
+/* Respect reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+  * { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; }
+}
+
+/* Page / route transitions when switching tabs */
+.route-container {
+  will-change: opacity, transform;
+}
+.route-container.route-enter {
+  animation: fadeInUp 520ms cubic-bezier(.2,.9,.2,1) both;
+}
+.route-container.route-exit {
+  animation: fadeIn 220ms ease both;
+}
+
+/* stagger children for smoother feel */
+.route-container.route-enter > * {
+  animation-delay: 80ms;
 }

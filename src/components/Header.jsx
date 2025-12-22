@@ -19,7 +19,7 @@ const Header = () => {
       <div className="container header-inner">
         <Link to="/" className="logo">
         <img src="/logo.png" alt="A" className="logo-mark" />
-          <span className="logo-text">Aizantra Intelligence</span>
+          <span className="logo-text">AIzantra Intelligence</span>
         </Link>
 
         <button

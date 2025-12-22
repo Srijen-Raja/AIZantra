@@ -7,7 +7,7 @@ const Footer = () => (
       {/* Top section */}
       <div className="footer-top">
         <div>
-          <h4 className="footer-brand">Aizantra Intelligence</h4>
+          <h4 className="footer-brand">AIzantra Intelligence</h4>
           <p className="footer-tagline">
             Engineering intelligent digital systems that accelerate enterprise success
             and unlock real, measurable business value.
