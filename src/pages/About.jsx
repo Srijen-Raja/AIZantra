@@ -1,5 +1,6 @@
 ﻿import React from 'react';
 import SectionWrapper from '../components/SectionWrapper.jsx';
+import TradixLogo from '../assets/Tradix_TX only.png';
 
 const About = () => (
   <>
@@ -52,6 +53,17 @@ const About = () => (
         Leadership believes AI only succeeds when data, process, people, and culture are
         aligned to a clear business outcome.
       </p>
+    </SectionWrapper>
+
+    <SectionWrapper id="tradix" title="TRADIX">
+      <p><span>TRADIX<sup>®</sup> is a trademark of AIZantra Intelligence Pvt. Ltd.</span> </p>
+      <div className="tradix-logo" style={{ display: 'flex', alignItems: 'center' }}>
+        <img
+          src={TradixLogo}
+          alt="TRADIX logo"
+          style={{ maxWidth: '280px', height: 'auto' }}
+        />
+      </div>
     </SectionWrapper>
   </>
 );

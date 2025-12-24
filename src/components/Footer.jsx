@@ -117,15 +117,6 @@ const Footer = () => (
           <span>© 2025 AIZantra Intelligence Pvt. Ltd. All Rights Reserved.</span>
           <div className="footer-trademark">
             <span>TRADIX<sup>®</sup> is a trademark of AIZantra Intelligence Pvt. Ltd.</span>
-            <a 
-              href="/tradix-logo.png" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="footer-trademark-link"
-              aria-label="View TRADIX logo"
-            >
-              View Logo
-            </a>
           </div>
         </div>
       </div>
