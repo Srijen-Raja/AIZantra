@@ -1,7 +1,7 @@
 ﻿import React from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import heroimg from '../assets/hero.jpg';
+import heroimg from '/src/assets/hero.jpg';
 
 const fadeUp = { hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0 } };
 
