@@ -1,7 +1,7 @@
-﻿import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { Link, NavLink, useLocation } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import logo from '/src/assets/Aizantra_logo.png';
+import logo from '../assets/Aizantra_logo.png';
 
 const Header = () => {
   const [open, setOpen] = useState(false);
@@ -39,6 +39,37 @@ const Header = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, [location.pathname]);
 
+  // Ensure the nav toggle doesn't receive focus on initial load
+  const toggleRef = useRef(null);
+  const [isMobile, setIsMobile] = useState(false);
+  useEffect(() => {
+    if (toggleRef.current && document.activeElement === toggleRef.current) {
+      toggleRef.current.blur();
+    }
+  }, []);
+
+  // Close mobile nav when route changes
+  useEffect(() => {
+    setOpen(false);
+    if (toggleRef.current) toggleRef.current.blur();
+  }, [location.pathname]);
+
+  // Force-close nav on initial mount to avoid flash-open on reload
+  useEffect(() => {
+    setOpen(false);
+    if (toggleRef.current) toggleRef.current.blur();
+    const id = setTimeout(() => setOpen(false), 50);
+    return () => clearTimeout(id);
+  }, []);
+
+  // Track mobile breakpoint to apply inline hiding only on mobile
+  useEffect(() => {
+    const check = () => setIsMobile(window.innerWidth <= 900);
+    check();
+    window.addEventListener('resize', check, { passive: true });
+    return () => window.removeEventListener('resize', check);
+  }, []);
+
   return (
     <motion.header 
       className={`header ${isScrolled ? 'header-scrolled' : ''}`} 
@@ -60,15 +91,21 @@ const Header = () => {
         </Link>
 
         <button
+          type="button"
+          ref={toggleRef}
           className="nav-toggle"
           onClick={() => setOpen((prev) => !prev)}
           aria-label="Toggle navigation"
+          aria-expanded={open}
         >
           <span />
           <span />
         </button>
 
-        <nav className={`nav ${open ? 'nav-open' : ''}`}>
+        <nav
+          className={`nav ${open ? 'nav-open' : ''}`}
+          style={isMobile && !open ? { display: 'none' } : undefined}
+        >
           {navItems.map((item) => (
             <NavLink
               key={item.to}
