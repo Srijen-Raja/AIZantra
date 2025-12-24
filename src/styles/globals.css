@@ -1028,11 +1028,11 @@ p {
   min-width: 44px; /* Ensure minimum touch target */
   min-height: 44px;
   border-radius: 8px;
-  border: 1px solid var(--border-color-light);
+  border: 4px solid var(--border-color-light);
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #ffffff;
+  background: rgba(249, 115, 22, 0.06); /* subtle brand-tinted background */
   transition: all 160ms ease;
   touch-action: manipulation; /* Prevents double-tap zoom */
 }
@@ -1046,7 +1046,8 @@ p {
 .footer-social-icon:hover,
 .footer-social-icon:focus {
   border-color: var(--accent-primary);
-  background: var(--accent-primary);
+  border-width: 4px;
+  background: rgb(0, 0, 0);
   transform: translateY(-2px);
   outline: 2px solid var(--accent-primary);
   outline-offset: 2px;
@@ -1054,10 +1055,10 @@ p {
 
 .footer-social-icon:hover .footer-social-icon-inner,
 .footer-social-icon:focus .footer-social-icon-inner {
-  color: white;
+  color: var(--text-primary);
 }
 
-.footer-social .footer-social-icon { display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px; margin-right: 8px; border-radius: 8px; background: #ffffff; border: 1px solid var(--border-color-light); color: var(--text-primary); text-decoration: none; }
+.footer-social .footer-social-icon { display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px; margin-right: 8px; border-radius: 8px; background: rgba(249, 115, 22, 0.06); border: 2px solid var(--border-color-light); color: var(--text-primary); text-decoration: none; }
 .footer-social .footer-social-icon svg { display: block; }
 .footer-social .footer-social-icon:hover { transform: translateY(-3px); }
 .footer-social .footer-social-whatsapp { background: #25D366; color: #fff; border-color: #25D366; }
