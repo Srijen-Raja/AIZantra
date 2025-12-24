@@ -524,14 +524,21 @@ p {
 }
 
 .logo-text {
+  display: inline-flex;
+  gap: 0.35rem;
+  align-items: baseline;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
   color: inherit;
   font-size: inherit;
   font-weight: inherit;
 }
 
-.header-scrolled .logo-text {
-  color: #ffffff;
-}
+.logo-text-main { color: var(--accent-secondary); font-weight: 800; }
+.logo-text-sub { color: #8b8c8f; font-weight: 700; }
+
+.header-scrolled .logo-text-main,
+.header-scrolled .logo-text-sub { color: #ffffff; }
 
 .logo-icon {
   width: 38px;
@@ -1049,6 +1056,11 @@ p {
 .footer-social-icon:focus .footer-social-icon-inner {
   color: white;
 }
+
+.footer-social .footer-social-icon { display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px; margin-right: 8px; border-radius: 8px; background: #ffffff; border: 1px solid var(--border-color-light); color: var(--text-primary); text-decoration: none; }
+.footer-social .footer-social-icon svg { display: block; }
+.footer-social .footer-social-icon:hover { transform: translateY(-3px); }
+.footer-social .footer-social-whatsapp { background: #25D366; color: #fff; border-color: #25D366; }
 
 .footer-bottom {
   margin-top: 1.75rem; /* Reduced */

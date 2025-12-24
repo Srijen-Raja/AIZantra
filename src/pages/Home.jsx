@@ -3,6 +3,7 @@ import Hero from '../components/Hero.jsx';
 import SectionWrapper from '../components/SectionWrapper.jsx';
 import ServiceCard from '../components/ServiceCard.jsx';
 import CaseStudyCard from '../components/CaseStudyCard.jsx';
+import tradixImg from '../assets/Tradix_TX only.png';
 
 const Home = () => (
   <>
@@ -34,6 +35,38 @@ const Home = () => (
             Deliver up to 40% cost reduction through data and platform modernization
             tailored to measurable business outcomes.
           </p>
+        </div>
+      </div>
+    </SectionWrapper>
+
+    <SectionWrapper
+      id="product"
+      eyebrow="Product"
+      title="TRADIX — Trading Intelligence Platform"
+    >
+      <div className="grid grid-2">
+        <div className="card">
+          <img src={tradixImg} alt="TRADIX" style={{maxWidth: 420, width: '100%', marginBottom: 16}} />
+          <h3>Overview</h3>
+          <p>
+            TRADIX is a modular trading intelligence and analytics product designed for institutions
+            and professional traders. It combines explainable machine learning signals, robust
+            backtesting, and production-ready execution integrations to accelerate alpha discovery
+            and improve risk-adjusted performance.
+          </p>
+        </div>
+
+        <div className="card">
+          <h3>Key Capabilities</h3>
+          <ul>
+            <li>Ensemble signals with explainability and confidence scoring</li>
+            <li>Backtesting, walk-forward validation, and scenario analysis</li>
+            <li>Risk-aware portfolio construction and rebalancing</li>
+            <li>Connector-based execution and broker integrations</li>
+          </ul>
+
+          <h3 style={{marginTop: 12}}>Learn More</h3>
+          <p>Contact our team to schedule a product demo or pilot: <a href="/contact">Book a demo</a>.</p>
         </div>
       </div>
     </SectionWrapper>

@@ -8,7 +8,7 @@ const Footer = () => (
       {/* Top section */}
       <div className="footer-top">
         <div>
-          <h4 className="footer-brand">AIzantra Intelligence</h4>
+          <h4 className="footer-brand">AIzantra Intelligence Pvt Ltd.</h4>
           <p className="footer-tagline">
             Engineering intelligent digital systems that accelerate enterprise success
             and unlock real, measurable business value.
@@ -26,15 +26,6 @@ const Footer = () => (
             <Link to="/contact" className="btn btn-primary footer-cta-button">
               Book a Consultation
             </Link>
-            <a
-              href="https://wa.me/919999646734?text=Hello%20Aizantra%20Intelligence,%20I%20would%20like%20to%20book%20a%20consultation"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="btn btn-secondary footer-cta-button footer-whatsapp-btn"
-              aria-label="Message us on WhatsApp to book consultation (opens in new tab)"
-            >
-              💬 WhatsApp Us
-            </a>
           </div>
         </div>
       </div>
@@ -45,6 +36,7 @@ const Footer = () => (
           <h5>Navigate</h5>
           <ul className="footer-links">
             <li><Link to="/about">About</Link></li>
+            <li><Link to="/product">Product</Link></li>
             <li><Link to="/services">Services</Link></li>
             <li><Link to="/industries">Industries</Link></li>
             <li><Link to="/case-studies">Case Studies</Link></li>
@@ -78,15 +70,22 @@ const Footer = () => (
               contact@aizantraintelligence.com
             </a>
           </p>
-          <p className="footer-meta">
-            1A4, GHS-02, Sigma Apartment,<br />
-            Beta 1, Greater Noida,<br />
-            U.P. 201308, India
-          </p>
+          <div className="footer-addresses">
+            <p className="footer-meta"><strong>Registered Office:</strong><br />
+              1A4, GHS-02, Sigma Apartment,<br />
+              Sector Beta 1,<br />
+              Greater Noida, UP 201310
+            </p>
 
-          <p className="footer-meta">
-            Contact Us: <a href="tel:+9101204343465">+91-0120-4343465</a> | <a href="tel:+9101140158284">+91-011-40158284</a> | <a href="tel:+919999646734">+91-9999646734</a>
-          </p>
+            <p className="footer-meta"><strong>Corporate Office:</strong><br />
+              A-335, Defence Colony,<br />
+              Second Floor, New Delhi, 110024
+            </p>
+
+            <p className="footer-meta">
+              Contact Us: <a href="tel:+9101204343465">+91-0120-4343465</a> | <a href="tel:+9101140158284">+91-011-40158284</a> | <a href="tel:+919999646734">+91-9999646734</a>
+            </p>
+          </div>
 
           <div className="footer-social">
             <a
@@ -98,15 +97,43 @@ const Footer = () => (
             >
               <span className="footer-social-icon-inner" aria-hidden="true">in</span>
             </a>
-            {/* <a
-              href="https://youtube.com/@aizantraintelligence"
+
+            <a
+              href="https://facebook.com/aizantraintelligence"
               target="_blank"
               rel="noopener noreferrer"
-              aria-label="Visit our YouTube channel (opens in new tab)"
+              aria-label="Follow us on Facebook (opens in new tab)"
               className="footer-social-icon"
             >
-              <span className="footer-social-icon-inner" aria-hidden="true">▶</span>
-            </a> */}
+              <span className="footer-social-icon-inner" aria-hidden="true">f</span>
+            </a>
+
+            <a
+              href="https://instagram.com/aizantraintelligence"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Follow us on Instagram (opens in new tab)"
+              className="footer-social-icon"
+            >
+              <span className="footer-social-icon-inner" aria-hidden="true">★</span>
+            </a>
+
+            <a
+              href="https://twitter.com/aizantraintelligence"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Follow us on Twitter (opens in new tab)"
+              className="footer-social-icon"
+            >
+              <span className="footer-social-icon-inner" aria-hidden="true">t</span>
+            </a>
+
+          </div>
+
+          <div className="footer-whatsapp" style={{marginTop:12}}>
+            <label style={{display:'block', fontWeight:700, marginBottom:6}}>WhatsApp number</label>
+            <input type="text" readOnly value="+91-9999646734" style={{padding:'8px 10px', borderRadius:8, border:'1px solid rgba(0,0,0,0.08)', minWidth:180}} />
+          </div>
           </div>
         </div>
       </div>
@@ -114,13 +141,13 @@ const Footer = () => (
       {/* Bottom line */}
       <div className="footer-bottom">
         <div className="footer-bottom-content">
-          <span>© 2025 AIZantra Intelligence Pvt. Ltd. All Rights Reserved.</span>
+          <span>© 2025 AIzantra Intelligence Pvt Ltd. All Rights Reserved.</span>
           <div className="footer-trademark">
-            <span>TRADIX<sup>®</sup> is a trademark of AIZantra Intelligence Pvt. Ltd.</span>
+            <span>TRADIX<sup>®</sup> is a trademark of AIzantra Intelligence Pvt Ltd.</span>
           </div>
         </div>
       </div>
-    </div>
+    
   </motion.footer>
 );
 

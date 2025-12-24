@@ -5,12 +5,12 @@ import logo from '../assets/Aizantra_logo.png';
 
 const Header = () => {
   const [open, setOpen] = useState(false);
-  const [isScrolled, setIsScrolled] = useState(false);
   const location = useLocation();
 
   const navItems = [
     { to: '/', label: 'Home' },
     { to: '/about', label: 'About' },
+    { to: '/#product', label: 'Product', hash: true },
     { to: '/services', label: 'Services' },
     { to: '/industries', label: 'Industries' },
     { to: '/case-studies', label: 'Case Studies' },
@@ -18,26 +18,7 @@ const Header = () => {
     { to: '/contact', label: 'Contact' }
   ];
 
-  useEffect(() => {
-    const handleScroll = () => {
-      // Check if we're on the home page and if we've scrolled past the hero section
-      const heroSection = document.querySelector('.hero');
-      if (heroSection && location.pathname === '/') {
-        const heroHeight = heroSection.offsetHeight;
-        const scrollPosition = window.scrollY || window.pageYOffset;
-        setIsScrolled(scrollPosition > heroHeight - 100); // Trigger slightly before hero ends
-      } else {
-        // For other pages, consider scrolled if past initial viewport
-        setIsScrolled(window.scrollY > 100);
-      }
-    };
-
-    // Check initial scroll position
-    handleScroll();
-
-    window.addEventListener('scroll', handleScroll, { passive: true });
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, [location.pathname]);
+  // Header remains white; removed scroll-based color change per request.
 
   // Ensure the nav toggle doesn't receive focus on initial load
   const toggleRef = useRef(null);
@@ -72,7 +53,7 @@ const Header = () => {
 
   return (
     <motion.header 
-      className={`header ${isScrolled ? 'header-scrolled' : ''}`} 
+      className={`header`} 
       initial={{ opacity: 0, y: -8 }} 
       animate={{ opacity: 1, y: 0 }} 
       transition={{ duration: 0.5 }}
@@ -87,7 +68,10 @@ const Header = () => {
             width="48"
             height="48"
           />
-          <span className="logo-text">AIzantra Intelligence</span>
+          <span className="logo-text">
+            <span className="logo-text-main">AIZANTRA</span>
+            <span className="logo-text-sub">INTELLIGENCE</span>
+          </span>
         </Link>
 
         <button
@@ -106,18 +90,33 @@ const Header = () => {
           className={`nav ${open ? 'nav-open' : ''}`}
           style={isMobile && !open ? { display: 'none' } : undefined}
         >
-          {navItems.map((item) => (
-            <NavLink
-              key={item.to}
-              to={item.to}
-              className={({ isActive }) =>
-                `nav-link ${isActive ? 'nav-link-active' : ''}`
-              }
-              onClick={() => setOpen(false)}
-            >
-              {item.label}
-            </NavLink>
-          ))}
+          {navItems.map((item) => {
+            if (item.hash) {
+              return (
+                <a
+                  key={item.to}
+                  href={item.to}
+                  className={`nav-link`}
+                  onClick={() => setOpen(false)}
+                >
+                  {item.label}
+                </a>
+              );
+            }
+
+            return (
+              <NavLink
+                key={item.to}
+                to={item.to}
+                className={({ isActive }) =>
+                  `nav-link ${isActive ? 'nav-link-active' : ''}`
+                }
+                onClick={() => setOpen(false)}
+              >
+                {item.label}
+              </NavLink>
+            );
+          })}
           <Link to="/contact" className="btn btn-primary nav-cta">
             Book Demo
           </Link>

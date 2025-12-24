@@ -151,37 +151,12 @@ const Contact = () => {
 
             <div className="contact-info-block">
               <div className="contact-info-label">Connect With Us</div>
-              <div className="contact-social-links">
-                <a
-                  href="https://wa.me/9999646732?text=Hello%20Aizantra%20Intelligence"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="Message us on WhatsApp (opens in new tab)"
-                  className="contact-social-icon contact-social-whatsapp"
-                  title="WhatsApp"
-                >
-                  <span aria-hidden="true">💬</span>
-                </a>
-                <a
-                  href="https://linkedin.com/company/aizantra-intelligence"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="Connect with us on LinkedIn (opens in new tab)"
-                  className="contact-social-icon"
-                  title="LinkedIn"
-                >
-                  <span aria-hidden="true">in</span>
-                </a>
-                {/* <a
-                  href="https://youtube.com/@aizantraintelligence"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="Visit our YouTube channel (opens in new tab)"
-                  className="contact-social-icon"
-                  title="YouTube"
-                >
-                  <span aria-hidden="true">▶</span>
-                </a> */}
+              <div className="contact-info-value">
+                <div style={{marginBottom:8}}><strong>LinkedIn:</strong> <a href="https://linkedin.com/company/aizantra-intelligence" target="_blank" rel="noopener noreferrer">AIZANTRA INTELLIGENCE</a></div>
+                <div style={{marginTop:6}}>
+                  <label style={{display:'block', fontWeight:700, marginBottom:6}}>WhatsApp number</label>
+                  <input type="text" readOnly value="+91-9999646734" style={{padding:'8px 10px', borderRadius:8, border:'1px solid rgba(0,0,0,0.08)', minWidth:180}} />
+                </div>
               </div>
             </div>
           </div>
