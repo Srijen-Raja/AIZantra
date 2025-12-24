@@ -1,5 +1,6 @@
 ﻿import React, { useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
+import { motion } from 'framer-motion';
 
 const Header = () => {
   const [open, setOpen] = useState(false);
@@ -15,10 +16,17 @@ const Header = () => {
   ];
 
   return (
-    <header className="header">
+    <motion.header className="header" initial={{ opacity: 0, y: -8 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }}>
       <div className="container header-inner">
-        <Link to="/" className="logo">
-        <img src="/logo.png" alt="A" className="logo-mark" />
+        <Link to="/" className="logo" aria-label="AIzantra Intelligence Home">
+          <img 
+            src="/logo.png" 
+            alt="AIzantra Intelligence Logo" 
+            className="logo-mark"
+            loading="eager"
+            width="40"
+            height="40"
+          />
           <span className="logo-text">AIzantra Intelligence</span>
         </Link>
 
@@ -49,7 +57,7 @@ const Header = () => {
           </Link>
         </nav>
       </div>
-    </header>
+    </motion.header>
   );
 };
 

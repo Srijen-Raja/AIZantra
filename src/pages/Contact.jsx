@@ -139,66 +139,24 @@ const Contact = () => {
 
             <div className="contact-info-block">
               <div className="contact-info-label">Connect With Us</div>
-              <div style={{ display: 'flex', gap: '0.75rem', marginTop: '0.75rem' }}>
+              <div className="contact-social-links">
                 <a
-                  href="https://linkedin.com"
+                  href="https://linkedin.com/company/aizantra-intelligence"
                   target="_blank"
-                  rel="noreferrer"
-                  title="LinkedIn"
-                  style={{
-                    width: '44px',
-                    height: '44px',
-                    borderRadius: '8px',
-                    border: '1px solid var(--border-color-light)',
-                    display: 'flex',
-                    alignItems: 'center',
-                    justifyContent: 'center',
-                    background: 'rgba(26, 31, 58, 0.6)',
-                    fontSize: '1.3rem',
-                    transition: 'all 200ms ease'
-                  }}
-                  onMouseOver={(e) => {
-                    e.target.style.borderColor = 'var(--accent-primary)';
-                    e.target.style.background = 'rgba(99, 102, 241, 0.15)';
-                    e.target.style.color = 'var(--accent-primary-bright)';
-                  }}
-                  onMouseOut={(e) => {
-                    e.target.style.borderColor = 'var(--border-color-light)';
-                    e.target.style.background = 'rgba(26, 31, 58, 0.6)';
-                    e.target.style.color = 'inherit';
-                  }}
+                  rel="noopener noreferrer"
+                  aria-label="Connect with us on LinkedIn (opens in new tab)"
+                  className="contact-social-icon"
                 >
-                  in
+                  <span aria-hidden="true">in</span>
                 </a>
                 <a
-                  href="https://youtube.com"
+                  href="https://youtube.com/@aizantraintelligence"
                   target="_blank"
-                  rel="noreferrer"
-                  title="YouTube"
-                  style={{
-                    width: '44px',
-                    height: '44px',
-                    borderRadius: '8px',
-                    border: '1px solid var(--border-color-light)',
-                    display: 'flex',
-                    alignItems: 'center',
-                    justifyContent: 'center',
-                    background: 'rgba(26, 31, 58, 0.6)',
-                    fontSize: '1.3rem',
-                    transition: 'all 200ms ease'
-                  }}
-                  onMouseOver={(e) => {
-                    e.target.style.borderColor = 'var(--accent-primary)';
-                    e.target.style.background = 'rgba(99, 102, 241, 0.15)';
-                    e.target.style.color = 'var(--accent-primary-bright)';
-                  }}
-                  onMouseOut={(e) => {
-                    e.target.style.borderColor = 'var(--border-color-light)';
-                    e.target.style.background = 'rgba(26, 31, 58, 0.6)';
-                    e.target.style.color = 'inherit';
-                  }}
+                  rel="noopener noreferrer"
+                  aria-label="Visit our YouTube channel (opens in new tab)"
+                  className="contact-social-icon"
                 >
-                  ▶
+                  <span aria-hidden="true">▶</span>
                 </a>
               </div>
             </div>

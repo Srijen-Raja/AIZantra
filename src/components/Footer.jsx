@@ -1,8 +1,9 @@
 ﻿import React from 'react';
 import { Link } from 'react-router-dom';
+import { motion } from 'framer-motion';
 
 const Footer = () => (
-  <footer className="footer">
+  <motion.footer className="footer" initial={{ opacity: 0, y: 12 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
     <div className="container">
       {/* Top section */}
       <div className="footer-top">
@@ -74,24 +75,22 @@ const Footer = () => (
 
           <div className="footer-social">
             <a
-              href="https://linkedin.com"
+              href="https://linkedin.com/company/aizantra-intelligence"
               target="_blank"
-              rel="noreferrer"
-              aria-label="LinkedIn"
+              rel="noopener noreferrer"
+              aria-label="Connect with us on LinkedIn (opens in new tab)"
               className="footer-social-icon"
             >
-              {/* LinkedIn icon (simple) */}
-              <span className="footer-social-icon-inner">in</span>
+              <span className="footer-social-icon-inner" aria-hidden="true">in</span>
             </a>
             <a
-              href="https://youtube.com"
+              href="https://youtube.com/@aizantraintelligence"
               target="_blank"
-              rel="noreferrer"
-              aria-label="YouTube"
+              rel="noopener noreferrer"
+              aria-label="Visit our YouTube channel (opens in new tab)"
               className="footer-social-icon"
             >
-              {/* YouTube play icon */}
-              <span className="footer-social-icon-inner">▶</span>
+              <span className="footer-social-icon-inner" aria-hidden="true">▶</span>
             </a>
           </div>
         </div>
@@ -102,7 +101,7 @@ const Footer = () => (
         <span>© 2025 Aizantra Intelligence Pvt. Ltd. All Rights Reserved.</span>
       </div>
     </div>
-  </footer>
+  </motion.footer>
 );
 
 export default Footer;

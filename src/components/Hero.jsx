@@ -1,68 +1,42 @@
 ﻿import React from 'react';
 import { Link } from 'react-router-dom';
+import { motion } from 'framer-motion';
+
+const fadeUp = { hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0 } };
 
 const Hero = () => (
-  <section className="hero">
-    <div className="container hero-grid">
-      {/* LEFT COLUMN (desktop) / FULL WIDTH (mobile) */}
-      <div className="hero-text">
+  <motion.section 
+    className="hero" 
+    initial="hidden" 
+    animate="visible" 
+    variants={{ visible: { transition: { staggerChildren: 0.15 } } }}
+  >
+    <div className="hero-background">
+      <img 
+        src="/src/assets/hero.jpg" 
+        alt="Professional workplace environment with consultants collaborating on enterprise AI transformation" 
+        className="hero-bg-image"
+        loading="eager"
+        fetchPriority="high"
+      />
+      <div className="hero-overlay" aria-hidden="true"></div>
+    </div>
+    <div className="container hero-content">
+      <motion.div className="hero-text" variants={fadeUp}>
         <h1>Engineering Intelligence. Accelerating Transformation.</h1>
         <p>
           Aizantra Intelligence helps large enterprises unlock measurable business value
           through AI strategy, enterprise-grade product development, data modernization,
           and intelligent automation.
         </p>
-
         <div className="hero-actions">
-          <Link to="/contact" className="btn btn-primary">
-            Request a Consultation
-          </Link>
-          <Link to="/case-studies" className="btn btn-secondary">
-            View Case Studies
+          <Link to="/contact" className="btn btn-hero">
+            Book Demo
           </Link>
         </div>
-
-        {/* MOBILE CARDS: shown only on small screens */}
-        <div className="hero-visual hero-visual-mobile">
-          <div className="hero-card hero-card-primary">
-            <h3>AI Strategy</h3>
-            <p>Align data, process, people, and culture with execution.</p>
-          </div>
-          <div className="hero-card hero-card-secondary">
-            <h3>Product Engineering</h3>
-            <p>Enterprise-grade platforms built for scale and resilience.</p>
-          </div>
-        </div>
-
-        <ul className="hero-stats">
-          <li>
-            <span className="hero-stat-label">25+ years</span>
-            <span className="hero-stat-value">Transformation leadership</span>
-          </li>
-          <li>
-            <span className="hero-stat-label">Up to 50%</span>
-            <span className="hero-stat-value">Faster time-to-market</span>
-          </li>
-          <li>
-            <span className="hero-stat-label">Up to 40%</span>
-            <span className="hero-stat-value">Cost reduction</span>
-          </li>
-        </ul>
-      </div>
-
-      {/* RIGHT COLUMN CARDS: shown only on desktop */}
-      <div className="hero-visual hero-visual-desktop">
-        <div className="hero-card hero-card-primary">
-          <h3>AI Strategy</h3>
-          <p>Align data, process, people, and culture with execution.</p>
-        </div>
-        <div className="hero-card hero-card-secondary">
-          <h3>Product Engineering</h3>
-          <p>Enterprise-grade platforms built for scale and resilience.</p>
-        </div>
-      </div>
+      </motion.div>
     </div>
-  </section>
+  </motion.section>
 );
 
 export default Hero;
