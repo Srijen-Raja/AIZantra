@@ -116,7 +116,10 @@ const Contact = () => {
             <div className="contact-info-block">
               <div className="contact-info-label">Phone</div>
               <div className="contact-info-value">
-                Available during business hours (IST)
+                {/* Update with phone number from letterhead */}
+                <a href="tel:+919999646732">+91-9999646732</a>
+                <br />
+                <small>Available during business hours (IST)</small>
               </div>
             </div>
 
@@ -124,11 +127,20 @@ const Contact = () => {
               <div className="contact-info-label">Headquarters</div>
               <div className="contact-info-value">
                 AIzantra Intelligence Pvt. Ltd.<br />
+                {/* Update with exact address from letterhead */}
                 1A4, GHS-02, Sigma Apartment,<br />
                 Beta 1, Greater Noida,<br />
                 U.P. 201308, India
               </div>
             </div>
+
+            {/* Add additional office addresses from letterhead if needed */}
+            {/* <div className="contact-info-block">
+              <div className="contact-info-label">Sales Office</div>
+              <div className="contact-info-value">
+                Address from letterhead
+              </div>
+            </div> */}
 
             <div className="contact-info-block">
               <div className="contact-info-label">Company Registration</div>
@@ -141,23 +153,35 @@ const Contact = () => {
               <div className="contact-info-label">Connect With Us</div>
               <div className="contact-social-links">
                 <a
+                  href="https://wa.me/9999646732?text=Hello%20Aizantra%20Intelligence"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Message us on WhatsApp (opens in new tab)"
+                  className="contact-social-icon contact-social-whatsapp"
+                  title="WhatsApp"
+                >
+                  <span aria-hidden="true">💬</span>
+                </a>
+                <a
                   href="https://linkedin.com/company/aizantra-intelligence"
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="Connect with us on LinkedIn (opens in new tab)"
                   className="contact-social-icon"
+                  title="LinkedIn"
                 >
                   <span aria-hidden="true">in</span>
                 </a>
-                <a
+                {/* <a
                   href="https://youtube.com/@aizantraintelligence"
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="Visit our YouTube channel (opens in new tab)"
                   className="contact-social-icon"
+                  title="YouTube"
                 >
                   <span aria-hidden="true">▶</span>
-                </a>
+                </a> */}
               </div>
             </div>
           </div>

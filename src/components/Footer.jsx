@@ -22,9 +22,20 @@ const Footer = () => (
           <p className="footer-cta-text">
             Ready to explore how AI, data, and product engineering can transform your business?
           </p>
-          <Link to="/contact" className="btn btn-primary footer-cta-button">
-            Book a Consultation
-          </Link>
+          <div className="footer-cta-buttons">
+            <Link to="/contact" className="btn btn-primary footer-cta-button">
+              Book a Consultation
+            </Link>
+            <a
+              href="https://wa.me/9999646734?text=Hello%20Aizantra%20Intelligence,%20I%20would%20like%20to%20book%20a%20consultation"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn btn-secondary footer-cta-button footer-whatsapp-btn"
+              aria-label="Message us on WhatsApp to book consultation (opens in new tab)"
+            >
+              💬 WhatsApp Us
+            </a>
+          </div>
         </div>
       </div>
 
@@ -73,6 +84,10 @@ const Footer = () => (
             U.P. 201308, India
           </p>
 
+          <p className="footer-meta">
+            Contact Us: <a href="tel:+9101204343465">+91-0120-4343465</a> | <a href="tel:+9101140158284">+91-011-40158284</a> | <a href="tel:+919999646734">+91-9999646734</a>
+          </p>
+
           <div className="footer-social">
             <a
               href="https://linkedin.com/company/aizantra-intelligence"
@@ -83,7 +98,7 @@ const Footer = () => (
             >
               <span className="footer-social-icon-inner" aria-hidden="true">in</span>
             </a>
-            <a
+            {/* <a
               href="https://youtube.com/@aizantraintelligence"
               target="_blank"
               rel="noopener noreferrer"
@@ -91,14 +106,28 @@ const Footer = () => (
               className="footer-social-icon"
             >
               <span className="footer-social-icon-inner" aria-hidden="true">▶</span>
-            </a>
+            </a> */}
           </div>
         </div>
       </div>
 
       {/* Bottom line */}
       <div className="footer-bottom">
-        <span>© 2025 AIZantra Intelligence Pvt. Ltd. All Rights Reserved.</span>
+        <div className="footer-bottom-content">
+          <span>© 2025 AIZantra Intelligence Pvt. Ltd. All Rights Reserved.</span>
+          <div className="footer-trademark">
+            <span>TRADIX<sup>®</sup> is a trademark of AIZantra Intelligence Pvt. Ltd.</span>
+            <a 
+              href="/tradix-logo.png" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="footer-trademark-link"
+              aria-label="View TRADIX logo"
+            >
+              View Logo
+            </a>
+          </div>
+        </div>
       </div>
     </div>
   </motion.footer>
