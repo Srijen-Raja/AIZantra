@@ -98,7 +98,7 @@ const Footer = () => (
 
       {/* Bottom line */}
       <div className="footer-bottom">
-        <span>© 2025 Aizantra Intelligence Pvt. Ltd. All Rights Reserved.</span>
+        <span>© 2025 AIZantra Intelligence Pvt. Ltd. All Rights Reserved.</span>
       </div>
     </div>
   </motion.footer>

@@ -10,7 +10,7 @@ const About = () => (
     >
       <div className="stack">
         <p>
-          Aizantra Intelligence Pvt. Ltd. is a next-generation AI innovation, software
+          AIzantra Intelligence Pvt. Ltd. is a next-generation AI innovation, software
           product development, and digital transformation company enabling enterprises to
           operate smarter, faster, and more efficiently.
         </p>

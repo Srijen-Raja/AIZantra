@@ -25,7 +25,7 @@ const Hero = () => (
       <motion.div className="hero-text" variants={fadeUp}>
         <h1>Engineering Intelligence. Accelerating Transformation.</h1>
         <p>
-          Aizantra Intelligence helps large enterprises unlock measurable business value
+          AIzantra Intelligence helps large enterprises unlock measurable business value
           through AI strategy, enterprise-grade product development, data modernization,
           and intelligent automation.
         </p>

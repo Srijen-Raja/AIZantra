@@ -10,7 +10,7 @@ const Home = () => (
 
     <SectionWrapper
       id="why"
-      eyebrow="Why Aizantra"
+      eyebrow="Why AIzantra"
       title="Trusted partner for AI-led enterprise transformation"
     >
       <div className="grid grid-3">

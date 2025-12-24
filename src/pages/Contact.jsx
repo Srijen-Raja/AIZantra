@@ -123,7 +123,7 @@ const Contact = () => {
             <div className="contact-info-block">
               <div className="contact-info-label">Headquarters</div>
               <div className="contact-info-value">
-                Aizantra Intelligence Pvt. Ltd.<br />
+                AIzantra Intelligence Pvt. Ltd.<br />
                 1A4, GHS-02, Sigma Apartment,<br />
                 Beta 1, Greater Noida,<br />
                 U.P. 201308, India

@@ -11,7 +11,7 @@ const Services = () => (
       title="Comprehensive services across the AI and digital lifecycle"
     >
       <p className="section-subtitle">
-        From strategy to execution, Aizantra provides end-to-end capabilities to design,
+        From strategy to execution, AIzantra provides end-to-end capabilities to design,
         build, and scale intelligent products and platforms.
       </p>
     </SectionWrapper>

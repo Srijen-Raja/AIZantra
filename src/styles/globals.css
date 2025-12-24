@@ -14,6 +14,9 @@
   --text-muted: #6B7280;
   --border-color: rgba(249, 115, 22, 0.15);
   --border-color-light: rgba(249, 115, 22, 0.08);
+  /* Section background alternation */
+  --section-bg-odd: #fbfdff; /* off-white */
+  --section-bg-even: #f4f6f8; /* off-gray */
 }
 
 * {
@@ -135,6 +138,14 @@ p {
 /* Sections - reduced padding by 20-25px (1.25-1.5rem) */
 .section {
   padding: 3.5rem 0; /* Reduced from 5rem/4rem */
+}
+
+/* Alternate background for each section to improve visual rhythm */
+.section:nth-of-type(odd) {
+  background-color: var(--section-bg-odd);
+}
+.section:nth-of-type(even) {
+  background-color: var(--section-bg-even);
 }
 
 .section--light {
