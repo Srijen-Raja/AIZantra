@@ -1,6 +1,7 @@
 ﻿import React from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
+import logo from '../assets/Aizantra_logo.png';
 
 const fadeUp = { hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0 } };
 
@@ -13,7 +14,7 @@ const Hero = () => (
   >
     <div className="hero-background">
       <img 
-        src="/src/assets/hero.jpg" 
+        src={logo} 
         alt="Professional workplace environment with consultants collaborating on enterprise AI transformation" 
         className="hero-bg-image"
         loading="eager"
