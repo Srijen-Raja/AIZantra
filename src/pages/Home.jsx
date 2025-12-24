@@ -11,62 +11,69 @@ const Home = () => (
 
     <SectionWrapper
       id="why"
-      eyebrow="Why AIzantra"
-      title="Trusted partner for AI-led enterprise transformation"
+      eyebrow="Why Aizantra"
+      title="Why Aizantra for SMEs"
     >
+      <p className="section-subtitle">
+        We combine consulting-led clarity with engineering execution—so AI and technology
+        deliver outcomes, not experiments.
+      </p>
       <div className="grid grid-3">
         <div className="card">
-          <h3>Deep leadership experience</h3>
+          <h3>25+ years of hands-on product and platform leadership</h3>
           <p>
-            25+ years of transformation leadership with proven success in banking, payments,
-            media, B2B supply chain, and retail.
+            Proven success across Banking, Payments, Retail, Media, and B2B supply chains.
+            Experience pragmatically applied for SMEs.
           </p>
         </div>
         <div className="card">
-          <h3>Faster time-to-market</h3>
+          <h3>Faster time-to-market (up to 50%)</h3>
           <p>
-            Accelerate delivery and reduce time-to-market by up to 50% with modern
-            engineering practices and automation.
+            Modern engineering practices and automation tailored to SME constraints.
+            Get to market faster without large-enterprise consulting complexity.
           </p>
         </div>
         <div className="card">
-          <h3>Outcome-focused modernization</h3>
+          <h3>Cost reduction through modernization (up to 40%)</h3>
           <p>
-            Deliver up to 40% cost reduction through data and platform modernization
-            tailored to measurable business outcomes.
+            Data and platform modernization delivering measurable ROI.
+            Engineering-led AI, Product, and Data expertise—beyond advisory.
           </p>
         </div>
       </div>
+      <p className="section-subtext" style={{marginTop: 24}}>
+        <strong>Credential Highlight:</strong> We have designed, built, and operated a production-grade B2B supply-chain 
+        platform (TRADIX<sup>®</sup>), giving us firsthand insight into real SME operating realities.
+      </p>
     </SectionWrapper>
 
     <SectionWrapper
       id="product"
-      eyebrow="Product"
-      title="TRADIX — Trading Intelligence Platform"
+      eyebrow="Platform"
+      title="TRADIX — B2B Supply-Chain Platform for SMEs"
     >
       <div className="grid grid-2">
         <div className="card">
           <img src={tradixImg} alt="TRADIX" style={{maxWidth: 420, width: '100%', marginBottom: 16}} />
           <h3>Overview</h3>
           <p>
-            TRADIX is a modular trading intelligence and analytics product designed for institutions
-            and professional traders. It combines explainable machine learning signals, robust
-            backtesting, and production-ready execution integrations to accelerate alpha discovery
-            and improve risk-adjusted performance.
+            TRADIX is a ready-to-deploy B2B supply-chain platform designed for SMEs. It unifies distributor, retailer, 
+            and supplier operations with built-in KYC, procurement, inventory management, and integrated payments.
           </p>
         </div>
 
         <div className="card">
           <h3>Key Capabilities</h3>
           <ul>
-            <li>Ensemble signals with explainability and confidence scoring</li>
-            <li>Backtesting, walk-forward validation, and scenario analysis</li>
-            <li>Risk-aware portfolio construction and rebalancing</li>
-            <li>Connector-based execution and broker integrations</li>
+            <li>Distributor, retailer, and supplier onboarding with KYC</li>
+            <li>Unified procurement, sales, inventory, and order management</li>
+            <li>Warehouse and fulfillment operations</li>
+            <li>Retailer billing, invoicing, and integrated payments</li>
+            <li>Analytics with AI-ready data foundations</li>
           </ul>
 
           <h3 style={{marginTop: 12}}>Learn More</h3>
-          <p>Contact our team to schedule a product demo or pilot: <a href="/contact">Book a demo</a>.</p>
+          <p>TRADIX demonstrates our capability to build and operate production-grade SME systems. <a href="/tradix">Explore TRADIX</a>.</p>
         </div>
       </div>
     </SectionWrapper>
@@ -74,39 +81,66 @@ const Home = () => (
     <SectionWrapper
       id="services"
       eyebrow="Services"
-      title="End-to-end AI, product, and modernization capabilities"
+      title="Services Built for SME Success"
     >
       <div className="grid grid-3">
         <ServiceCard
           title="AI Strategy & Consulting"
           points={[
-            'AI readiness & maturity assessment',
-            'AI roadmap & ROI modeling',
-            'AI governance & use case prioritization',
-            'Responsible AI frameworks',
-            'Prototyping & PoCs'
+            'ROI-first roadmaps aligned to SME constraints and priorities',
+            'AI readiness & opportunity assessment',
+            'Custom AI governance frameworks',
+            'Responsible AI implementation'
           ]}
         />
         <ServiceCard
-          title="Software Product Development"
+          title="Software Product Engineering"
           points={[
-            'End-to-end product engineering',
-            'UX/UI design',
+            'Custom platforms integrating ERP, Tally, CRM, and legacy tools',
+            'Modern systems for SME operations',
             'Full-stack & microservices development',
-            'Cloud-native systems',
-            'Enterprise platform engineering'
+            'Production-ready engineering execution'
           ]}
         />
         <ServiceCard
           title="Generative AI Solutions"
           points={[
-            'Conversational AI agents',
-            'Document automation',
-            'AI copilots for workforce',
-            'Knowledge management automation',
-            'Workflow intelligence'
+            'Applied AI embedded into workflows—not standalone pilots',
+            'Document automation and intelligence',
+            'Workflow optimization and automation',
+            'Knowledge management intelligence'
           ]}
         />
+      </div>
+    </SectionWrapper>
+
+    <SectionWrapper
+      id="differentiation"
+      eyebrow="Differentiation"
+      title="What Sets Us Apart"
+    >
+      <div className="grid grid-2">
+        <div className="card">
+          <h3>Engineering-led. Product-driven. Outcome-focused.</h3>
+          <ul>
+            <li>Consulting grounded in real product and platform experience</li>
+            <li>A standard B2B supply-chain offering (TRADIX<sup>®</sup>) complemented by custom engineering</li>
+            <li>Responsible AI with governance built-in</li>
+            <li>Focus on helping SMEs move faster, spend smarter, and scale with confidence</li>
+          </ul>
+        </div>
+        <div className="card">
+          <h3>End-to-End Execution</h3>
+          <p>
+            We don't just advise—we build and operate. Our product-builder mindset means we deliver 
+            scalable, resilient systems designed for growing SME businesses. From strategy to production, 
+            we ensure AI and technology create measurable business value.
+          </p>
+          <p style={{marginTop: 12}}>
+            <strong>Data readiness, system integration, governance, people, and change alignment</strong> are 
+            the foundation of successful AI. We bridge your business ambition with real-world engineering execution.
+          </p>
+        </div>
       </div>
     </SectionWrapper>
 

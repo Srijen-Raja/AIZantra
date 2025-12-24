@@ -8,11 +8,11 @@ const Services = () => (
     <SectionWrapper
       id="services-overview"
       eyebrow="Services"
-      title="Comprehensive services across the AI and digital lifecycle"
+      title="Services for SME Success"
     >
       <p className="section-subtitle">
-        From strategy to execution, AIzantra provides end-to-end capabilities to design,
-        build, and scale intelligent products and platforms.
+        From strategy to execution, Aizantra provides end-to-end capabilities to design,
+        build, and scale intelligent products and platforms—optimized for SME needs and constraints.
       </p>
     </SectionWrapper>
 
@@ -21,19 +21,19 @@ const Services = () => (
         <ServiceCard
           title="AI Strategy & Consulting"
           points={[
-            'AI readiness & maturity assessment',
-            'AI roadmap & ROI modeling',
-            'AI governance & use case prioritization',
-            'Responsible AI frameworks',
+            'ROI-first roadmaps aligned to SME constraints and priorities',
+            'AI readiness & opportunity assessment',
+            'Custom AI governance frameworks',
+            'Responsible AI implementation',
             'Prototyping & PoCs'
           ]}
         />
         <ServiceCard
-          title="Software Product Development"
+          title="Software Product Engineering"
           points={[
+            'Custom platforms integrating ERP, Tally, CRM, and legacy tools',
             'End-to-end product engineering',
-            'UX/UI design',
-            'Full-stack & API/microservices development',
+            'Full-stack & modern architecture',
             'Cloud-native systems',
             'Enterprise platform engineering'
           ]}
@@ -41,29 +41,30 @@ const Services = () => (
         <ServiceCard
           title="Generative AI Solutions"
           points={[
-            'Conversational AI agents',
-            'Document automation',
-            'AI copilots for workforce',
+            'Applied AI embedded into workflows—not standalone pilots',
+            'Document automation and intelligence',
+            'AI workflow optimization',
             'Knowledge management automation',
-            'Workflow intelligence'
+            'Workflow and process intelligence'
           ]}
         />
         <ServiceCard
           title="Data & Platform Modernization"
           points={[
-            'Data engineering & pipelines',
-            'Cloud migration (AWS / Azure / GCP)',
-            'Master data management',
-            'Real-time data platforms',
-            'Data governance'
+            'Intelligence-ready data foundations',
+            'Governance by design',
+            'Cloud migration & optimization',
+            'Real-time analytics platforms',
+            'Master data management'
           ]}
         />
         <ServiceCard
-          title="Digital Transformation & Automation"
+          title="Digital Transformation"
           points={[
+            'End-to-end execution focused on measurable business outcomes',
             'Business process redesign',
             'RPA & workflow automation',
-            'ERP / CRM integrations',
+            'Legacy system modernization',
             'Supply chain digitalization'
           ]}
         />
