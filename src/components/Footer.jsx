@@ -27,7 +27,7 @@ const Footer = () => (
               Book a Consultation
             </Link>
             <a
-              href="https://wa.me/9999646734?text=Hello%20Aizantra%20Intelligence,%20I%20would%20like%20to%20book%20a%20consultation"
+              href="https://wa.me/919999646734?text=Hello%20Aizantra%20Intelligence,%20I%20would%20like%20to%20book%20a%20consultation"
               target="_blank"
               rel="noopener noreferrer"
               className="btn btn-secondary footer-cta-button footer-whatsapp-btn"
