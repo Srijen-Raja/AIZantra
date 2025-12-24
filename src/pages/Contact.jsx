@@ -153,7 +153,7 @@ const Contact = () => {
               <div className="contact-info-label">Connect With Us</div>
               <div className="contact-social-links">
                 <a
-                  href="https://wa.me/9999646732?text=Hello%20Aizantra%20Intelligence"
+                  href="https://wa.me/919999646732?text=Hello%20Aizantra%20Intelligence"
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="Message us on WhatsApp (opens in new tab)"
