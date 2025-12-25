@@ -7,69 +7,52 @@ const About = () => (
     <SectionWrapper
       id="about"
       eyebrow="About Us"
-      title="Consulting-First, Engineering-Led AI for SMEs"
+      title="Consulting-First, Engineering-Led AI & Software Products for SMEs"
     >
       <div className="stack">
         <p>
           Aizantra Intelligence Pvt. Ltd. is a consulting-first, engineering-led AI and software product
-          development company enabling SMEs and mid-market enterprises to operate smarter,
-          faster, and more efficiently—without large-enterprise consulting complexity.
+          development company enabling SMEs and mid-market enterprises to operate smarter, faster, and
+          more efficiently—without the complexity, cost, or rigidity of large-enterprise consulting models.
         </p>
         <p>
-          Our approach is shaped by building and operating real platforms, not just advising on them.
-          This product-builder mindset informs how we design scalable, resilient systems for growing
-          businesses. We combine consulting-led clarity with engineering execution—so AI and technology
-          deliver outcomes, not experiments.
+          Our approach is shaped by decades of experience building, scaling, and operating enterprise-grade
+          software products and platforms in complex, highly regulated global environments. Our founders have
+          led end-to-end product journeys—from product vision, architecture, and roadmap definition to
+          engineering, modernization, and AI enablement—delivering platforms used at scale with strong
+          foundations in security, data governance, and resilience.
+        </p>
+        <p>
+          This product-builder mindset informs how we design and deliver scalable, cloud-native software
+          products and AI-enabled systems for growing businesses. We combine consulting-led clarity with deep
+          product engineering and system integration, ensuring AI, data, and software products deliver real,
+          measurable business outcomes—not experiments or prototypes.
         </p>
       </div>
     </SectionWrapper>
 
-    <SectionWrapper id="mission-vision" title="Mission and Philosophy">
+    <SectionWrapper id="mission-vision" title="Mission & Philosophy">
       <div className="grid grid-2">
         <div className="card">
-          <h3>Mission</h3>
+          <h3>Our Mission</h3>
           <p>
-            To engineer intelligent, scalable digital systems that accelerate SME and mid-market growth
-            and unlock real, measurable ROI—through strong data foundations, responsible AI, and
-            production-ready engineering.
+            To design and build intelligent, scalable digital systems that help SMEs and mid-market enterprises grow
+            faster and operate smarter—delivering real, measurable ROI through strong data foundations, responsible
+            AI, and production-ready software engineering.
           </p>
         </div>
         <div className="card">
-          <h3>Leadership Philosophy</h3>
+          <h3>Our Leadership Philosophy</h3>
           <p>
-            AI succeeds only when data readiness, system integration, governance, people, and change
-            are aligned. AIzantra bridges SME business ambition with real-world product engineering
-            and execution, grounded in experience operating mission-critical platforms including
-            TRADIX<sup>®</sup>, in live SME environments.
+            AI delivers impact only when data readiness, system integration, governance, people, and change move
+            together. At Aizantra, we bridge SME ambition with hands-on product engineering and execution,
+            grounded in decades of experience building and operating mission-critical platforms—including
+            TRADIX®, proven in live SME environments.
+          </p>
+          <p style={{marginTop:8}}>
+            <strong>Our philosophy is simple: no experiments without foundations, and no strategy without execution.</strong>
           </p>
         </div>
-      </div>
-    </SectionWrapper>
-
-    <SectionWrapper id="values" title="Our Approach">
-      <div className="tag-row">
-        <span className="tag">Engineering-led</span>
-        <span className="tag">Product-driven</span>
-        <span className="tag">Outcome-focused</span>
-        <span className="tag">Responsible AI</span>
-        <span className="tag">SME Expertise</span>
-      </div>
-      <p className="section-subtext">
-        We differentiate through consulting grounded in real product and platform experience,
-        a standard B2B supply-chain offering (TRADIX<sup>®</sup>) complemented by custom engineering,
-        responsible AI with governance built-in, and a focus on helping SMEs move faster, spend smarter,
-        and scale with confidence.
-      </p>
-    </SectionWrapper>
-
-    <SectionWrapper id="tradix" title="TRADIX">
-      <p><span>TRADIX<sup>®</sup> is a trademark of AIzantra Intelligence Pvt. Ltd.</span> </p>
-      <div className="tradix-logo" style={{ display: 'flex', alignItems: 'center' }}>
-        <img
-          src={TradixLogo}
-          alt="TRADIX logo"
-          style={{ maxWidth: '280px', height: 'auto' }}
-        />
       </div>
     </SectionWrapper>
   </>
