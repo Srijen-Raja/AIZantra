@@ -63,14 +63,14 @@ const Home = () => (
     <SectionWrapper
       id="product"
       eyebrow="Platform"
-      title="TRADIX — B2B Supply-Chain Platform for SMEs"
+      title="TRADIX® — B2B Supply-Chain Platform for SMEs"
     >
       <div className="grid grid-2">
         <div className="card">
-          <img src={tradixImg} alt="TRADIX" style={{maxWidth: 420, width: '100%', marginBottom: 16}} />
-          <h3>Overview</h3>
+          <img src={tradixImg} alt="TRADIX logo" style={{maxWidth: 360, maxHeight: 160, width: '100%', objectFit: 'contain', marginBottom: 8, display: 'block'}} />
+          <h3 style={{marginTop: 4, marginBottom: 8}}>Overview — TRADIX®</h3>
           <p>
-            TRADIX is a ready-to-deploy B2B supply-chain platform designed for SMEs. It unifies distributor, retailer,
+            TRADIX® is a ready-to-deploy B2B supply-chain platform designed for SMEs. It unifies distributor, retailer,
             and supplier operations with built-in KYC, procurement, inventory management, and integrated payments.
           </p>
         </div>
@@ -86,7 +86,7 @@ const Home = () => (
           </ul>
 
           <h3 style={{marginTop: 12}}>Learn More</h3>
-          <p>TRADIX demonstrates our capability to build and operate production-grade SME systems. <a href="/tradix">Explore TRADIX</a>.</p>
+          <p>TRADIX® demonstrates our capability to build and operate production-grade SME systems. <a href="/tradix">Explore TRADIX®</a>.</p>
         </div>
       </div>
     </SectionWrapper>
