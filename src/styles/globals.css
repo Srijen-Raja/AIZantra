@@ -534,7 +534,7 @@ p {
   font-weight: inherit;
 }
 
-.logo-text-main { color: var(--accent-secondary); font-weight: 800; }
+.logo-text-main { color: #146DC8; font-weight: 800; }
 .logo-text-sub { color: #8b8c8f; font-weight: 700; }
 
 .header-scrolled .logo-text-main,
