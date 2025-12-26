@@ -36,7 +36,7 @@ const Footer = () => (
           <h5>Navigate</h5>
           <ul className="footer-links">
             <li><Link to="/about">About</Link></li>
-            <li><Link to="/#product">Product</Link></li>
+            
             <li><Link to="/services">Services</Link></li>
             
           </ul>
