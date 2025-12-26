@@ -9,6 +9,7 @@ import CaseStudies from './pages/CaseStudies.jsx';
 import Insights from './pages/Insights.jsx';
 import Contact from './pages/Contact.jsx';
 import PrivaciyPolicy from './pages/PrivaciyPolicy.jsx';
+import TermsOfService from './pages/TermsOfService.jsx';
 
 const AppRouter = () => {
   const location = useLocation();
@@ -30,6 +31,7 @@ const AppRouter = () => {
           <Route path="/case-studies" element={<CaseStudies />} />
           <Route path="/insights" element={<Insights />} />
           <Route path="/privacy-policy" element={<PrivaciyPolicy />} />
+          <Route path="/terms-of-service" element={<TermsOfService />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </motion.div>

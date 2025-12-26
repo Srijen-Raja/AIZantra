@@ -68,42 +68,6 @@ const PrivaciyPolicy = () => {
 
 				<hr />
 
-					<div id="terms" className="terms-section">
-						<h3>Terms of Service</h3>
-						<p><strong>Effective Date:</strong> 26-12-2025</p>
-						<p>
-							These Terms govern access to www.aizantraintelligence.com, operated by AIzantra Intelligence
-							Private Limited. By using this website, you agree to these Terms.
-						</p>
-
-						<h4>Use of Website</h4>
-						<p>
-							The website provides general information about AIzantra’s consulting services and software
-							products. Content does not constitute professional advice.
-						</p>
-
-						<h4>Intellectual Property</h4>
-						<p>
-							All website content, trademarks, and materials are owned by AIzantra unless stated otherwise.
-							Unauthorized use is prohibited.
-						</p>
-
-						<h4>Engagement Terms</h4>
-						<p>
-							Consulting services and software products are governed by separate written agreements. Website
-							content does not create any binding obligation.
-						</p>
-
-						<h4>Limitation of Liability</h4>
-						<p>
-							To the extent permitted by law, AIzantra shall not be liable for indirect or consequential damages arising from website use.
-						</p>
-
-						<h4>Governing Law</h4>
-						<p>
-							These Terms are governed by the laws of India. Courts in [Insert City] shall have exclusive jurisdiction.
-						</p>
-					</div>
 
 				<h4>Contact</h4>
 				<p>Email: <a href="mailto:contact@aizantraintelligence.com">contact@aizantraintelligence.com</a></p>
