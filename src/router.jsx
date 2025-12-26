@@ -8,6 +8,7 @@ import Industries from './pages/Industries.jsx';
 import CaseStudies from './pages/CaseStudies.jsx';
 import Insights from './pages/Insights.jsx';
 import Contact from './pages/Contact.jsx';
+import PrivaciyPolicy from './pages/PrivaciyPolicy.jsx';
 
 const AppRouter = () => {
   const location = useLocation();
@@ -28,6 +29,7 @@ const AppRouter = () => {
           <Route path="/industries" element={<Industries />} />
           <Route path="/case-studies" element={<CaseStudies />} />
           <Route path="/insights" element={<Insights />} />
+          <Route path="/privacy-policy" element={<PrivaciyPolicy />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </motion.div>

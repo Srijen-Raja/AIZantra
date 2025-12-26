@@ -38,28 +38,25 @@ const Footer = () => (
             <li><Link to="/about">About</Link></li>
             <li><Link to="/product">Product</Link></li>
             <li><Link to="/services">Services</Link></li>
-            <li><Link to="/industries">Industries</Link></li>
-            <li><Link to="/case-studies">Case Studies</Link></li>
-            <li><Link to="/insights">Insights</Link></li>
+            
           </ul>
         </div>
 
         <div className="footer-col">
           <h5>Resources</h5>
           <ul className="footer-links">
-            <li><a href="#">Blogs & Insights</a></li>
-            <li><a href="#">Whitepapers</a></li>
-            <li><a href="#">POVs</a></li>
-            <li><a href="#">Client Stories</a></li>
+            <li><Link to="/industries">Industries</Link></li>
+            <li><Link to="/case-studies">Case Studies</Link></li>
+            <li><Link to="/insights">Insights</Link></li>            
           </ul>
         </div>
 
         <div className="footer-col">
           <h5>Company</h5>
           <ul className="footer-links">
-            <li><a href="#">Careers</a></li>
-            <li><a href="#">Privacy Policy</a></li>
-            <li><a href="#">Terms of Service</a></li>
+            
+            <li><Link to="/privacy-policy">Privacy Policy</Link></li>
+            <li><Link to="/privacy-policy#terms">Terms of Service</Link></li>
           </ul>
         </div>
 
