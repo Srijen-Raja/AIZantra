@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Link, NavLink, useLocation } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import logo from '../assets/Aizantra_logo.png';
+import logo from '../assets/Aizantra thumbnail darker shade.png;
 
 const Header = () => {
   const [open, setOpen] = useState(false);
