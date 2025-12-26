@@ -70,8 +70,7 @@ const Home = () => (
           <img src={tradixImg} alt="TRADIX logo" style={{maxWidth: 360, maxHeight: 160, width: '100%', objectFit: 'contain', marginBottom: 8, display: 'block'}} />
           <h3 style={{marginTop: 4, marginBottom: 8}}>Overview — TRADIX®</h3>
           <p>
-            TRADIX® is a ready-to-deploy B2B supply-chain platform designed for SMEs. It unifies distributor, retailer,
-            and supplier operations with built-in KYC, procurement, inventory management, and integrated payments.
+            <b>TRADIX®</b> is a ready-to-deploy B2B supply-chain platform for SMEs. It connects business buyers, sellers, and fulfillment partners, enabling seamless onboarding, procurement, inventory visibility, and payment workflows.
           </p>
         </div>
 
@@ -159,7 +158,7 @@ const Home = () => (
           icon={<BankIcon />}
           description={"Measured outcomes from applied AI, data intelligence, and platform modernization across banking operations."}
           bullets={[
-            <><strong>Anomaly Detection & Fraud Prevention</strong> <br/> Real-time transaction monitoring to identify abnormal patterns, reducing fraud losses by 35–45% and false positives by 30%+.</>,
+            <><strong>Anomaly Detection & Fraud Prevention</strong> <br/> t transaction monitoring to identify abnormal patterns, reducing fraud losses by 35–45% and false positives by 30%+.</>,
             <><strong>Personalized Products & Intelligent Cross-Sell / Up-Sell</strong> <br/> AI-driven customer insights enable targeted offers, improving cross-sell and up-sell conversions by 25–40%.</>,
             <><strong>AI-Driven Underwriting & Risk Assessment</strong> <br/> Predictive risk scoring and alternative data automate underwriting, improving accuracy by 30% and cutting manual reviews by 60%.</>,
             <><strong>Operational Automation at Scale</strong> <br/> Automated 65% of repetitive queries, reduced operating costs by 40%, and improved resolution time by 60%.</>
