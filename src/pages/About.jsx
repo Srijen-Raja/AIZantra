@@ -11,22 +11,23 @@ const About = () => (
     >
       <div className="stack">
         <p>
-          Aizantra Intelligence Pvt. Ltd. is a consulting-first, engineering-led AI and software product
+          <b>Aizantra Intelligence Pvt. Ltd.</b> is a consulting-first, engineering-led AI and software product
           development company enabling SMEs and mid-market enterprises to operate smarter, faster, and
           more efficiently—without the complexity, cost, or rigidity of large-enterprise consulting models.
         </p>
+        <br/>
         <p>
-          Our approach is shaped by decades of experience building, scaling, and operating enterprise-grade
-          software products and platforms in complex, highly regulated global environments. Our founders have
+          <b>Our approach is shaped by decades of experience building, scaling, and operating enterprise-grade
+          software products and platforms in complex, highly regulated global environments.</b> Our founders have
           led end-to-end product journeys—from product vision, architecture, and roadmap definition to
           engineering, modernization, and AI enablement—delivering platforms used at scale with strong
           foundations in security, data governance, and resilience.
-        </p>
+        </p> <br/>
         <p>
           This product-builder mindset informs how we design and deliver scalable, cloud-native software
-          products and AI-enabled systems for growing businesses. We combine consulting-led clarity with deep
+          products and AI-enabled systems for growing businesses.<b> We combine consulting-led clarity with deep
           product engineering and system integration, ensuring AI, data, and software products deliver real,
-          measurable business outcomes—not experiments or prototypes.
+          measurable business outcomes—not experiments or prototypes.</b>
         </p>
       </div>
     </SectionWrapper>
