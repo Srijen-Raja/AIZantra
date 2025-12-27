@@ -36,9 +36,9 @@ const Footer = () => (
           <h5>Navigate</h5>
           <ul className="footer-links">
             <li><Link to="/about">About</Link></li>
-            
+
             <li><Link to="/services">Services</Link></li>
-            
+
           </ul>
         </div>
 
@@ -47,14 +47,14 @@ const Footer = () => (
           <ul className="footer-links">
             <li><Link to="/industries">Industries</Link></li>
             <li><Link to="/case-studies">Case Studies</Link></li>
-            <li><Link to="/insights">Insights</Link></li>            
+            <li><Link to="/insights">Insights</Link></li>
           </ul>
         </div>
 
         <div className="footer-col">
           <h5>Company</h5>
           <ul className="footer-links">
-            
+
             <li><Link to="/privacy-policy">Privacy Policy</Link></li>
             <li><Link to="/terms-of-service">Terms of Service</Link></li>
           </ul>
@@ -90,7 +90,7 @@ const Footer = () => (
 
           <div className="footer-social">
             <a
-              href="https://linkedin.com/company/aizantra-intelligence"
+              href="https://www.linkedin.com/in/aizantra-intelligence"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Connect with us on LinkedIn (opens in new tab)"

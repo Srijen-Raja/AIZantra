@@ -156,7 +156,7 @@ const Contact = () => {
 
               <div className="contact-social-links">
                 <a
-                  href="https://linkedin.com/company/aizantra-intelligence"
+                  href="https://www.linkedin.com/in/aizantra-intelligence"
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="Connect with us on LinkedIn (opens in new tab)"

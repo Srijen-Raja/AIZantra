@@ -12,8 +12,8 @@ const Home = () => (
 
     <SectionWrapper
       id="why"
-      eyebrow="Why Aizantra"
-      title="Why Aizantra for SMEs"
+      eyebrow="Why AIzantra"
+      title="Why AIzantra for SMEs"
     >
       <p className="section-subtitle">
         Enterprise Experience, Practically Applied — right-sized AI and product engineering for SMEs.
@@ -174,7 +174,7 @@ const Home = () => (
 
             <><strong>Lower Cost & Engineering Efficiency</strong> <br/> Platform standardization and automation reduced development costs by 40%.</>,
 
-            <><strong>Globally Scalable API Platforms</strong> <br/> Delivered secure, versioned, and high-throughput APIs supporting global payment volumes and partner ecosystems.</>,    
+            <><strong>Globally Scalable API Platforms</strong> <br/> Delivered secure, versioned, and high-throughput APIs supporting global payment volumes and partner ecosystems.</>,
             <><strong>Data Products, Insights & AI/GenAI Intelligence</strong> <br/> Governed transaction data powers real-time insights, merchant analytics, revenue growth, anomaly detection, operational intelligence, GenAI copilots, and faster issue resolution across the payments stack.</>,
           ]}
         />

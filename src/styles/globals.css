@@ -121,12 +121,12 @@ h1 {
 }
 
 h2 {
-  font-size: clamp(2rem, 4.2vw, 3rem);
+  font-size: clamp(1.5rem, 3.5vw, 2.2rem);
   margin-bottom: 1.25rem;
 }
 
 h3 {
-  font-size: clamp(1.15rem, 3vw, 1.4rem);
+  font-size: clamp(1rem, 2.5vw, 1.25rem);
   margin-bottom: 0.625rem; /* Reduced */
 }
 
@@ -239,7 +239,8 @@ p {
 .card h3 {
   color: var(--text-primary);
   margin-bottom: 0.6rem;
-  font-size: 1.15rem; /* increased heading size inside cards */
+  font-size: 1rem; /* adjusted for better fit */
+  line-height: 1.3;
 }
 
 .card p {
@@ -664,7 +665,7 @@ p {
     background: rgba(255, 255, 255, 0.1);
     border-color: rgba(255, 255, 255, 0.3);
   }
-  
+
   .nav-toggle:focus {
     outline: 2px solid var(--accent-primary);
     outline-offset: 2px;
