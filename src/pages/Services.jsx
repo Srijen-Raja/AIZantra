@@ -16,20 +16,40 @@ const Services = () => (
       </p>
     </SectionWrapper>
 
+    {/* <SectionWrapper
+      id="ai-strategy"
+      title="AI Strategy & Consulting"
+    >
+      <p className="section-subtitle">
+        Advisory-led AI and GenAI strategy services focused on clarity, ROI, and responsible adoption—tailored to SME and mid-market constraints.
+      </p>
+
+      <div className="grid grid-3">
+        <div>
+          <h4>What we deliver</h4>
+          <ul>
+            <li>ROI-first AI roadmaps and prioritized use cases</li>
+            <li>AI readiness assessment and governance frameworks</li>
+            <li>Responsible AI strategy covering risk, security, and compliance</li>
+          </ul>
+        </div>
+      </div>
+    </SectionWrapper> */}
+
     <SectionWrapper id="services-detail">
       <div className="grid grid-3">
         <ServiceCard
           title="AI Strategy & Consulting"
+          description={"Advisory-led AI and GenAI strategy services focused on clarity, ROI, and responsible adoption—tailored to SME and mid-market constraints."}
           points={[
-            'ROI-first roadmaps aligned to SME constraints and priorities',
-            'AI readiness & opportunity assessment',
-            'Custom AI governance frameworks',
-            'Responsible AI implementation',
-            'Prototyping & PoCs'
+            'ROI-first AI roadmaps and prioritized use cases',
+            'AI readiness assessment and governance frameworks',
+            'Responsible AI strategy covering risk, security, and compliance'
           ]}
         />
         <ServiceCard
           title="Software Product Engineering"
+          description={"End-to-end product engineering services to design, build, and scale modern digital products and platforms."}
           points={[
             'Custom platforms integrating ERP, Tally, CRM, and legacy tools',
             'End-to-end product engineering',
@@ -40,6 +60,7 @@ const Services = () => (
         />
         <ServiceCard
           title="Generative AI Solutions"
+          description={"Practical, execution-focused AI solutions embedded directly into business workflows—designed to deliver measurable outcomes, not pilots."}
           points={[
             'Applied AI embedded into workflows—not standalone pilots',
             'Document automation and intelligence',
@@ -50,6 +71,7 @@ const Services = () => (
         />
         <ServiceCard
           title="Data & Platform Modernization"
+          description={"Modern data and integration foundations that enable analytics, AI, and scalable digital operations."}
           points={[
             'Intelligence-ready data foundations',
             'Governance by design',
