@@ -1,5 +1,4 @@
-﻿
-import React from 'react';
+﻿import React from 'react';
 import SectionWrapper from '../components/SectionWrapper.jsx';
 import ServiceCard from '../components/ServiceCard.jsx';
 
@@ -16,31 +15,17 @@ const Services = () => (
       </p>
     </SectionWrapper>
 
-    {/* <SectionWrapper
-      id="ai-strategy"
-      title="AI Strategy & Consulting"
-    >
+    {/* <SectionWrapper id="ai-strategy" title="AI Strategy & Consulting">
       <p className="section-subtitle">
         Advisory-led AI and GenAI strategy services focused on clarity, ROI, and responsible adoption—tailored to SME and mid-market constraints.
       </p>
-
-      <div className="grid grid-3">
-        <div>
-          <h4>What we deliver</h4>
-          <ul>
-            <li>ROI-first AI roadmaps and prioritized use cases</li>
-            <li>AI readiness assessment and governance frameworks</li>
-            <li>Responsible AI strategy covering risk, security, and compliance</li>
-          </ul>
-        </div>
-      </div>
     </SectionWrapper> */}
 
     <SectionWrapper id="services-detail">
       <div className="grid grid-3">
         <ServiceCard
           title="AI Strategy & Consulting"
-          description={"Advisory-led AI and GenAI strategy services focused on clarity, ROI, and responsible adoption—tailored to SME and mid-market constraints."}
+          description="Advisory-led AI and GenAI strategy services focused on clarity, ROI, and responsible adoption—tailored to SME and mid-market constraints."
           points={[
             'ROI-first AI roadmaps and prioritized use cases',
             'AI readiness assessment and governance frameworks',
@@ -48,46 +33,30 @@ const Services = () => (
           ]}
         />
         <ServiceCard
-          title="Software Product Engineering"
-          description={"End-to-end product engineering services to design, build, and scale modern digital products and platforms."}
+          title="Applied AI & GenAI Solutions"
+          description="Practical, execution-focused AI solutions embedded directly into business workflows—designed to deliver measurable outcomes, not pilots."
           points={[
-            'Custom platforms integrating ERP, Tally, CRM, and legacy tools',
-            'End-to-end product engineering',
-            'Full-stack & modern architecture',
-            'Cloud-native systems',
-            'Enterprise platform engineering'
+            'GenAI copilots, conversational AI, and RAG-based intelligence systems',
+            'Document automation, knowledge management, and workflow automation',
+            'Predictive analytics, decision intelligence, and AI-driven optimization'
           ]}
         />
         <ServiceCard
-          title="Generative AI Solutions"
-          description={"Practical, execution-focused AI solutions embedded directly into business workflows—designed to deliver measurable outcomes, not pilots."}
+          title="Software Product Development & Engineering"
+          description="End-to-end product engineering services to design, build, and scale modern digital products and platforms."
           points={[
-            'Applied AI embedded into workflows—not standalone pilots',
-            'Document automation and intelligence',
-            'AI workflow optimization',
-            'Knowledge management automation',
-            'Workflow and process intelligence'
+            'Custom web and mobile product development',
+            'SaaS platforms and internal enterprise systems',
+            'Cloud-native engineering with APIs, microservices, and event-driven architecture'
           ]}
         />
         <ServiceCard
-          title="Data & Platform Modernization"
-          description={"Modern data and integration foundations that enable analytics, AI, and scalable digital operations."}
+          title="Data, Integration & Platform Modernization"
+          description="Modern data and integration foundations that enable analytics, AI, and scalable digital operations."
           points={[
-            'Intelligence-ready data foundations',
-            'Governance by design',
-            'Cloud migration & optimization',
-            'Real-time analytics platforms',
-            'Master data management'
-          ]}
-        />
-        <ServiceCard
-          title="Digital Transformation"
-          points={[
-            'End-to-end execution focused on measurable business outcomes',
-            'Business process redesign',
-            'RPA & workflow automation',
-            'Legacy system modernization',
-            'Supply chain digitalization'
+            'Data unification across ERP, CRM, legacy, and operational systems',
+            'Scalable data pipelines, middleware, and integration layers',
+            'Legacy platform modernization to support AI and automation'
           ]}
         />
       </div>

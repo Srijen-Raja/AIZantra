@@ -98,29 +98,38 @@ const Home = () => (
       <div className="grid grid-3">
         <ServiceCard
           title="AI Strategy & Consulting"
+          description="Advisory-led AI and GenAI strategy services focused on clarity, ROI, and responsible adoption—tailored to SME and mid-market constraints."
           points={[
-            'ROI-first roadmaps aligned to SME constraints and priorities',
-            'AI readiness & opportunity assessment',
-            'Custom AI governance frameworks',
-            'Responsible AI implementation'
+            'ROI-first AI roadmaps and prioritized use cases',
+            'AI readiness assessment and governance frameworks',
+            'Responsible AI strategy covering risk, security, and compliance'
           ]}
         />
         <ServiceCard
-          title="Software Product Engineering"
+          title="Applied AI & GenAI Solutions"
+          description="Practical, execution-focused AI solutions embedded directly into business workflows—designed to deliver measurable outcomes, not pilots."
           points={[
-            'Custom platforms integrating ERP, Tally, CRM, and legacy tools',
-            'Modern systems for SME operations',
-            'Full-stack & microservices development',
-            'Production-ready engineering execution'
+            'GenAI copilots, conversational AI, and RAG-based intelligence systems',
+            'Document automation, knowledge management, and workflow automation',
+            'Predictive analytics, decision intelligence, and AI-driven optimization'
           ]}
         />
         <ServiceCard
-          title="Generative AI Solutions"
+          title="Software Product Development & Engineering"
+          description="End-to-end product engineering services to design, build, and scale modern digital products and platforms."
           points={[
-            'Applied AI embedded into workflows—not standalone pilots',
-            'Document automation and intelligence',
-            'Workflow optimization and automation',
-            'Knowledge management intelligence'
+            'Custom web and mobile product development',
+            'SaaS platforms and internal enterprise systems',
+            'Cloud-native engineering with APIs, microservices, and event-driven architecture'
+          ]}
+        />
+        <ServiceCard
+          title="Data, Integration & Platform Modernization"
+          description="Modern data and integration foundations that enable analytics, AI, and scalable digital operations."
+          points={[
+            'Data unification across ERP, CRM, legacy, and operational systems',
+            'Scalable data pipelines, middleware, and integration layers',
+            'Legacy platform modernization to support AI and automation'
           ]}
         />
       </div>
@@ -171,11 +180,9 @@ const Home = () => (
           description={"Outcome-driven modernization combining cloud-native platforms, governed data foundations, and AI/GenAI integration to scale payments innovation with confidence."}
           bullets={[
             <><strong>Accelerated Time-to-Market</strong> <br/> Modular architectures and reusable services reduced time-to-market by 50%.</>,
-
             <><strong>Lower Cost & Engineering Efficiency</strong> <br/> Platform standardization and automation reduced development costs by 40%.</>,
-
             <><strong>Globally Scalable API Platforms</strong> <br/> Delivered secure, versioned, and high-throughput APIs supporting global payment volumes and partner ecosystems.</>,
-            <><strong>Data Products, Insights & AI/GenAI Intelligence</strong> <br/> Governed transaction data powers real-time insights, merchant analytics, revenue growth, anomaly detection, operational intelligence, GenAI copilots, and faster issue resolution across the payments stack.</>,
+            <><strong>Data Products, Insights & AI/GenAI Intelligence</strong> <br/> Governed transaction data powers real-time insights, merchant analytics, revenue growth, anomaly detection, operational intelligence, GenAI copilots, and faster issue resolution across the payments stack.</>
           ]}
         />
 
