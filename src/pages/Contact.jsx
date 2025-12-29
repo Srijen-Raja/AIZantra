@@ -20,7 +20,7 @@ const Contact = () => {
     e.preventDefault();
 
     const form = e.currentTarget;
-    const actionUrl = form.action || 'https://formsubmit.co/contact@aizantraintelligence.com';
+    const actionUrl = form.action;
     // Build body from the form itself so hidden inputs and any future fields are included.
     const formPayload = new URLSearchParams(new FormData(form));
 
