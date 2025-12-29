@@ -19,7 +19,7 @@ const Contact = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    const actionUrl = 'https://formsubmit.co/yashrj.034@gmail.com';
+    const actionUrl = 'https://formsubmit.co/contact@aizantraintelligence.com';
     const payload = {
       fullName: formData.fullName,
       companyName: formData.companyName,
