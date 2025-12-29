@@ -16,11 +16,40 @@ const Contact = () => {
     setFormData(prev => ({ ...prev, [name]: value }));
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    setSubmitted(true);
-    setFormData({ fullName: '', companyName: '', email: '', phone: '', message: '' });
-    setTimeout(() => setSubmitted(false), 5000);
+
+    const actionUrl = 'https://formsubmit.co/yashrj.034@gmail.com';
+    const payload = {
+      fullName: formData.fullName,
+      companyName: formData.companyName,
+      email: formData.email,
+      phone: formData.phone,
+      message: formData.message,
+      _captcha: 'false',
+      _subject: 'New contact request from website',
+      _next: window.location.origin + '/contact'
+    };
+
+    try {
+      const res = await fetch(actionUrl, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: new URLSearchParams(payload)
+      });
+
+      if (res.ok || res.type === 'opaqueredirect' || res.status === 200 || res.status === 201) {
+        setSubmitted(true);
+        setFormData({ fullName: '', companyName: '', email: '', phone: '', message: '' });
+        setTimeout(() => setSubmitted(false), 5000);
+      } else {
+        console.error('Form submit failed', res.status, await res.text());
+        alert('Submission failed — please try again or email us directly at contact@aizantraintelligence.com');
+      }
+    } catch (err) {
+      console.error('Form submit error', err);
+      alert('Network error — please try again or email us directly at contact@aizantraintelligence.com');
+    }
   };
 
   return (
@@ -31,7 +60,15 @@ const Contact = () => {
         subtitle="Share your challenges and objectives. Our team will explore how AI, data, and engineering can unlock measurable business value for your enterprise."
       >
         <div className="grid grid-2">
-          <form className="card contact-form" onSubmit={handleSubmit}>
+          <form
+            className="card contact-form"
+            action="https://formsubmit.co/yashrj.034@gmail.com"
+            method="POST"
+            onSubmit={handleSubmit}
+          >
+            <input type="hidden" name="_captcha" value="false" />
+            <input type="hidden" name="_subject" value="New contact request from website" />
+            <input type="hidden" name="_next" value="/contact" />
             <div className="form-group">
               <label htmlFor="fullName">Full Name *</label>
               <input
