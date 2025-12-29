@@ -62,7 +62,7 @@ const Contact = () => {
         <div className="grid grid-2">
           <form
             className="card contact-form"
-            action="https://formsubmit.co/yashrj.034@gmail.com"
+            action="https://formsubmit.co/776619d2e713a4356d7afe3accf84e74"
             method="POST"
             onSubmit={handleSubmit}
           >
