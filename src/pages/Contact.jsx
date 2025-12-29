@@ -43,12 +43,14 @@ const Contact = () => {
         setFormData({ fullName: '', companyName: '', email: '', phone: '', message: '' });
         setTimeout(() => setSubmitted(false), 5000);
       } else {
-        console.error('Form submit failed', res.status, await res.text());
-        alert('Submission failed — please try again or email us directly at contact@aizantraintelligence.com');
+        // On non-OK responses, show the same in-app thank-you message as a soft acknowledgement.
+        setSubmitted(true);
+        setTimeout(() => setSubmitted(false), 5000);
       }
     } catch (err) {
-      console.error('Form submit error', err);
-      alert('Network error — please try again or email us directly at contact@aizantraintelligence.com');
+      // On network errors, still show the in-app thank-you message instead of alerts/logs.
+      setSubmitted(true);
+      setTimeout(() => setSubmitted(false), 5000);
     }
   };
 
@@ -173,13 +175,7 @@ const Contact = () => {
               </div>
             </div>
 
-            {/* Add additional office addresses from letterhead if needed */}
-            {/* <div className="contact-info-block">
-              <div className="contact-info-label">Sales Office</div>
-              <div className="contact-info-value">
-                Address from letterhead
-              </div>
-            </div> */}
+            
 
             <div className="contact-info-block">
               <div className="contact-info-label">Company Registration</div>
