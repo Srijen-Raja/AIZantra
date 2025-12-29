@@ -19,23 +19,16 @@ const Contact = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    const actionUrl = 'https://formsubmit.co/contact@aizantraintelligence.com';
-    const payload = {
-      fullName: formData.fullName,
-      companyName: formData.companyName,
-      email: formData.email,
-      phone: formData.phone,
-      message: formData.message,
-      _captcha: 'false',
-      _subject: 'New contact request from website',
-      _next: window.location.origin + '/contact'
-    };
+    const form = e.currentTarget;
+    const actionUrl = form.action || 'https://formsubmit.co/contact@aizantraintelligence.com';
+    // Build body from the form itself so hidden inputs and any future fields are included.
+    const formPayload = new URLSearchParams(new FormData(form));
 
     try {
       const res = await fetch(actionUrl, {
         method: 'POST',
         headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-        body: new URLSearchParams(payload)
+        body: formPayload
       });
 
       if (res.ok || res.type === 'opaqueredirect' || res.status === 200 || res.status === 201) {
