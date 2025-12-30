@@ -51,7 +51,7 @@ const Contact = () => {
     <>
       <SectionWrapper
         eyebrow="Get In Touch"
-        title="Let's talk about your transformation"
+        title="Let's talk about your transfor"
         subtitle="Share your challenges and objectives. Our team will explore how AI, data, and engineering can unlock measurable business value for your enterprise."
       >
         <div className="grid grid-2">
