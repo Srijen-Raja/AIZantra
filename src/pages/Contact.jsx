@@ -57,7 +57,7 @@ const Contact = () => {
         <div className="grid grid-2">
           <form
             className="card contact-form"
-            action="https://formsubmit.co/contact@aizantraintelligence.com"
+            action="https://formsubmit.co/9992f44f374398a93b52f24e7d723584"
             method="POST"
             onSubmit={handleSubmit}
           >
