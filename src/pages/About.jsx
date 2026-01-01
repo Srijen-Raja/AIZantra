@@ -11,7 +11,7 @@ const About = () => (
     >
       <div className="stack">
         <p>
-          <b>Aizantra Intelligence Pvt. Ltd.</b> is a consulting-first,
+          <b>AIzantra Intelligence Pvt. Ltd.</b> is a consulting-first,
           engineering-led AI and software product development company enabling
           SMEs and mid-market enterprises to operate smarter, faster, and more
           efficiently—without the complexity, cost, or rigidity of
@@ -49,28 +49,21 @@ const About = () => (
         <div className="card">
           <h3>Our Mission</h3>
           <p>
-            We help SMEs and growing enterprises scale with confidence by
-            designing, building, and operating intelligent, AI-enabled digital
-            products and platforms that turn data into action and deliver
-            measurable business outcomes.
+            We help SMEs and growing enterprises move from ambition to execution by combining deep domain insight, hands-on product engineering, and AI grounded in strong data foundations and governance—shaped by decades of experience building and operating mission-critical platforms.
           </p>
         </div>
         <div className="card">
           <h3>Our Leadership Philosophy</h3>
           <p>
-            AI creates real impact only when data readiness, system integration,
-            governance, people, and change move together. At Aizantra
-            Intelligence, we bridge SME ambition with hands-on product
-            engineering and disciplined execution, drawing on decades of
-            experience building and operating mission-critical
-            platforms—including TRADIX®, proven in live SME environments.
+            Technology creates impact only when strategy, data, systems, people, and change move together.
+At Aizantra Intelligence, we lead with consulting-led clarity, build production-ready digital products and platforms, and apply AI responsibly to solve real business problems.
             <br /><br />
             <b>
-              Our philosophy is simple: no AI without strong foundations, and no
-              strategy without execution.
+              Our philosophy is simple:
+No AI without foundations, No product without purpose, and No strategy without execution.
             </b>
           </p>
-          
+
         </div>
       </div>
     </SectionWrapper>

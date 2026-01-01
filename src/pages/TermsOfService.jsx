@@ -23,39 +23,39 @@ const TermsOfService = () => {
 
   return (
     <SectionWrapper id="terms" title="Terms of Service" eyebrow="Privacy & Terms" subtitle="Effective Date: 26.12.2025">
-      <h3>Terms of Service</h3>
+      <h3 className="big-para">Terms of Service</h3>
       <p><strong>Effective Date:</strong> 26-12-2025</p>
-      <p>
+      <p className="big-para">
         These Terms govern access to www.aizantraintelligence.com, operated by AIzantra Intelligence
         Private Limited. By using this website, you agree to these Terms.
       </p>
 
-      <h4>Use of Website</h4>
-      <p>
+      <h4 className="big-ph4a">Use of Website</h4>
+      <p className="big-para">
         The website provides general information about AIzantra’s consulting services and software
         products. Content does not constitute professional advice.
       </p>
 
-      <h4>Intellectual Property</h4>
-      <p>
+      <h4 className="big-para">Intellectual Property</h4>
+      <p className="big-para">
         All website content, trademarks, and materials are owned by AIzantra unless stated otherwise.
         Unauthorized use is prohibited.
       </p>
 
-      <h4>Engagement Terms</h4>
-      <p>
+      <h4 className="big-para">Engagement Terms</h4>
+      <p className="big-para">
         Consulting services and software products are governed by separate written agreements. Website
         content does not create any binding obligation.
       </p>
 
-      <h4>Limitation of Liability</h4>
-      <p>
+      <h4 className="big-para">Limitation of Liability</h4>
+      <p className="big-para">
         To the extent permitted by law, AIzantra shall not be liable for indirect or consequential damages arising from website use.
       </p>
 
-      <h4>Governing Law</h4>
+      <h4 className="big-para">Governing Law</h4>
       <p>
-        These Terms are governed by the laws of India. Courts in [Insert City] shall have exclusive jurisdiction.
+        These Terms are governed by the laws of India. Courts in Greater Noida shall have exclusive jurisdiction.
       </p>
     </SectionWrapper>
   );

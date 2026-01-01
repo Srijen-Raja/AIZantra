@@ -10,12 +10,11 @@ const Services = () => (
       title="Services for SME Success"
     >
       <div className="full-bleed">
-        <p className="section-subtitle">
-          <strong>
-            From strategy to execution, Aizantra provides end-to-end capabilities to design,
-            build, and scale intelligent products and platforms—optimized for SME needs and constraints.
-          </strong>
-        </p>
+        <p>
+  From strategy to execution, AIzantra provides end-to-end capabilities to design,
+  build, and scale intelligent products and platforms—optimized for SME needs and constraints.
+</p>
+
       </div>
     </SectionWrapper>
 
