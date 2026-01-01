@@ -25,7 +25,7 @@ const TermsOfService = () => {
     <SectionWrapper
   id="terms"
   title={<span style={{ color: '#f97316' }}>Terms of Service</span>}
-  eyebrow={<span style={{ color: '#1f2937' }}>Privacy and Terms</span>}
+  // eyebrow={<span style={{ color: '#1f2937' }}>Privacy and Terms</span>}
   subtitle="Effective Date: 26.12.2025"
 >
       {/* <h3 className="big-para">Terms of Service</h3> */}

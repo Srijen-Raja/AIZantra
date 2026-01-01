@@ -23,8 +23,9 @@ const PrivaciyPolicy = () => {
 
 	return (
 		<>
-			<SectionWrapper id="privacy" title={<span style={{ color: '#f97316' }}>Privacy Policy</span>}
-			eyebrow={<span style={{ color: '#1f2937' }}>Privacy and Terms</span>}
+			<SectionWrapper id="privacy"
+			title={<span style={{ color: '#f97316' }}>Privacy Policy</span>}
+			// eyebrow={<span style={{ color: '#1f2937' }}>Privacy and Terms</span>}
 			subtitle="Effective Date: 26.12.2025">
 					{/* <h3>Privacy Policy</h3> */}
 					<p className="big-para">
