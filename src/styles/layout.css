@@ -8,3 +8,16 @@
     transition-duration: 0.01ms !important;
   }
 }
+
+/* Utility to let content span the full viewport width while staying visually aligned */
+.full-bleed {
+  
+}
+
+.full-bleed .section-subtitle {
+  font-weight: 700;
+  max-width: 200vw;
+  width: 100%;
+  display: block;
+  margin: 10;
+}

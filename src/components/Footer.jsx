@@ -71,16 +71,16 @@ const Footer = () => (
             <p className="footer-meta"><strong>Registered Office:</strong><br />
               1A4, GHS-02, Sigma Apartment,<br />
               Sector Beta 1,<br />
-              Greater Noida, UP 201310<br />
-              tel:<a href="tel:+9101204343465">+91-0120-4343465</a>
+              Greater Noida, UP 201310,<br />
+              <a href="tel:+9101204343465">+91-0120-4343465</a>
              
               
             </p>
 
             <p className="footer-meta"><strong>Corporate Office:</strong><br />
               A-335, Defence Colony,<br />
-              Second Floor, New Delhi, 110024<br />
-              tel:<a href="tel:+9101140158284">+91-011-40158284</a>
+              Second Floor, New Delhi, 110024,<br />
+              <a href="tel:+9101140158284">+91-011-40158284</a>
             </p>
 
             <p className="footer-meta">

@@ -1,11 +1,57 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { Link, NavLink, useLocation } from 'react-router-dom';
+import { Link, NavLink, useLocation, useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import logo from '../assets/Aizantra_logo.png';
 
 const Header = () => {
   const [open, setOpen] = useState(false);
   const location = useLocation();
+  const navigate = useNavigate();
+
+  const handleHash = (to) => {
+    const parts = to.split('#');
+    const path = parts[0] || '/';
+    const hash = parts[1] || '';
+
+    const tryScroll = () => {
+      if (!hash) return;
+      let attempts = 0;
+      const maxAttempts = 30;
+      const interval = 50;
+      const tick = () => {
+        const el = document.getElementById(hash);
+        if (el) {
+          el.scrollIntoView({ behavior: 'smooth' });
+          return;
+        }
+        attempts += 1;
+        if (attempts < maxAttempts) {
+          setTimeout(tick, interval);
+        }
+      };
+      tick();
+    };
+
+    if (hash) {
+      if (location.pathname === path) {
+        // Already on target path — update URL hash and attempt to scroll
+        try {
+          window.history.pushState({}, '', path + `#${hash}`);
+        } catch (e) {
+          // ignore
+        }
+        tryScroll();
+      } else {
+        // Navigate to path+hash, then poll for the element to appear
+        navigate(path + (hash ? `#${hash}` : ''));
+        // start polling after a small delay to allow route/component mount
+        setTimeout(tryScroll, 60);
+      }
+    } else {
+      // no hash — just navigate
+      navigate(path);
+    }
+  };
 
   const navItems = [
     { to: '/', label: 'Home' },
@@ -97,7 +143,11 @@ const Header = () => {
                   key={item.to}
                   href={item.to}
                   className={`nav-link`}
-                  onClick={() => setOpen(false)}
+                  onClick={(e) => {
+                    e.preventDefault();
+                    handleHash(item.to);
+                    setOpen(false);
+                  }}
                 >
                   {item.label}
                 </a>
