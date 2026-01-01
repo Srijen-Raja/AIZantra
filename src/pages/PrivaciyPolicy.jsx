@@ -23,8 +23,11 @@ const PrivaciyPolicy = () => {
 
 	return (
 		<>
-			<SectionWrapper id="privacy" title="Privacy Policy" eyebrow="Privacy & Terms" subtitle="Effective Date: 26.12.2025">
-				<h3>Privacy Policy</h3><p className="big-para">
+			<SectionWrapper id="privacy" title={<span style={{ color: '#f97316' }}>Privacy Policy</span>}
+			eyebrow={<span style={{ color: '#1f2937' }}>Privacy and Terms</span>}
+			subtitle="Effective Date: 26.12.2025">
+					{/* <h3>Privacy Policy</h3> */}
+					<p className="big-para">
 					AIzantra Intelligence Private Limited (“AIzantra”, “we”, “our”) provides consulting,
 					advisory, software products, and technology services. This Privacy Policy describes how we
 					collect, use, and protect personal data through our website www.aizantraintelligence.com.

@@ -1337,7 +1337,10 @@ ol ul {
 }
 
 .big-para {
-  font-size: 20px !important;
+   font-size: clamp(0.95rem, 1.5vw, 1.05rem);
   line-height: 1.5;
   margin-bottom: 1.5rem;
+}
+#terms, .orange-text {
+  color: orange; /* or #ffa500 for precision */
 }

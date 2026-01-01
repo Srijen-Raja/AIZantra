@@ -22,15 +22,20 @@ const TermsOfService = () => {
   }, [location]);
 
   return (
-    <SectionWrapper id="terms" title="Terms of Service" eyebrow="Privacy & Terms" subtitle="Effective Date: 26.12.2025">
-      <h3 className="big-para">Terms of Service</h3>
-      <p><strong>Effective Date:</strong> 26-12-2025</p>
+    <SectionWrapper
+  id="terms"
+  title={<span style={{ color: '#f97316' }}>Terms of Service</span>}
+  eyebrow={<span style={{ color: '#1f2937' }}>Privacy and Terms</span>}
+  subtitle="Effective Date: 26.12.2025"
+>
+      {/* <h3 className="big-para">Terms of Service</h3> */}
+      {/* <p><strong>Effective Date:</strong> 26-12-2025</p> */}
       <p className="big-para">
         These Terms govern access to www.aizantraintelligence.com, operated by AIzantra Intelligence
         Private Limited. By using this website, you agree to these Terms.
       </p>
 
-      <h4 className="big-ph4a">Use of Website</h4>
+      <h4 className="big-para">Use of Website</h4>
       <p className="big-para">
         The website provides general information about AIzantra’s consulting services and software
         products. Content does not constitute professional advice.
