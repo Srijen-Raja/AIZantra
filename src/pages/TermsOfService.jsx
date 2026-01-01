@@ -54,7 +54,7 @@ const TermsOfService = () => {
       </p>
 
       <h4 className="big-para">Governing Law</h4>
-      <p>
+      <p className="big-para">
         These Terms are governed by the laws of India. Courts in Greater Noida shall have exclusive jurisdiction.
       </p>
     </SectionWrapper>
