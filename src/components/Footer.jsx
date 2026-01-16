@@ -8,7 +8,7 @@ const Footer = () => (
       {/* Top section */}
       <div className="footer-top">
         <div>
-          <h4 className="footer-brand">AIzantra Intelligence Pvt Ltd.</h4>
+          <h4 className="footer-brand">Aizantra Intelligence Pvt Ltd.</h4>
           <p className="footer-tagline">
             Engineering intelligent digital systems that accelerate enterprise success
             and unlock real, measurable business value.
@@ -260,9 +260,9 @@ const Footer = () => (
     {/* Bottom line */}
     <div className="footer-bottom">
       <div className="footer-bottom-content">
-        <span>© 2025 AIzantra Intelligence Pvt Ltd. All Rights Reserved.</span>
+        <span>© 2025 Aizantra Intelligence Pvt Ltd. All Rights Reserved.</span>
         <div className="footer-trademark">
-          <span>TRADIX<sup>®</sup> is a trademark of AIzantra Intelligence Pvt Ltd.</span>
+          <span>TRADIX<sup>®</sup> is a trademark of Aizantra Intelligence Pvt Ltd.</span>
         </div>
       </div>
     </div>

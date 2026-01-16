@@ -11,7 +11,7 @@ const Services = () => (
     >
       <div className="full-bleed">
         <p>
-  From strategy to execution, AIzantra provides end-to-end capabilities to design,
+  From strategy to execution, Aizantra provides end-to-end capabilities to design,
   build, and scale intelligent products and platforms—optimized for SME needs and constraints.
 </p>
 

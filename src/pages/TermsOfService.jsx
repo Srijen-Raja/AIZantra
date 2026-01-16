@@ -31,19 +31,19 @@ const TermsOfService = () => {
       {/* <h3 className="big-para">Terms of Service</h3> */}
       {/* <p><strong>Effective Date:</strong> 26-12-2025</p> */}
       <p className="big-para">
-        These Terms govern access to www.aizantraintelligence.com, operated by AIzantra Intelligence
+        These Terms govern access to www.aizantraintelligence.com, operated by Aizantra Intelligence
         Private Limited. By using this website, you agree to these Terms.
       </p>
 
       <h4 className="big-para">Use of Website</h4>
       <p className="big-para">
-        The website provides general information about AIzantra’s consulting services and software
+        The website provides general information about Aizantra’s consulting services and software
         products. Content does not constitute professional advice.
       </p>
 
       <h4 className="big-para">Intellectual Property</h4>
       <p className="big-para">
-        All website content, trademarks, and materials are owned by AIzantra unless stated otherwise.
+        All website content, trademarks, and materials are owned by Aizantra unless stated otherwise.
         Unauthorized use is prohibited.
       </p>
 
@@ -55,7 +55,7 @@ const TermsOfService = () => {
 
       <h4 className="big-para">Limitation of Liability</h4>
       <p className="big-para">
-        To the extent permitted by law, AIzantra shall not be liable for indirect or consequential damages arising from website use.
+        To the extent permitted by law, Aizantra shall not be liable for indirect or consequential damages arising from website use.
       </p>
 
       <h4 className="big-para">Governing Law</h4>

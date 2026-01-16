@@ -105,10 +105,10 @@ const Header = () => {
       transition={{ duration: 0.5 }}
     >
       <div className="container header-inner">
-        <Link to="/" className="logo" aria-label="AIzantra Intelligence Home">
+        <Link to="/" className="logo" aria-label="Aizantra Intelligence Home">
           <img 
             src={logo} 
-            alt="AIzantra Intelligence Logo" 
+            alt="Aizantra Intelligence Logo" 
             className="logo-mark"
             loading="eager"
             width="48"

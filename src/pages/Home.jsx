@@ -12,8 +12,8 @@ const Home = () => (
 
     <SectionWrapper
       id="why"
-      eyebrow="Why AIzantra"
-      title="Why AIzantra for SMEs"
+      eyebrow="Why Aizantra"
+      title="Why Aizantra for SMEs"
     >
       <p className="section-subtitle">
         Enterprise Experience, Practically Applied — right-sized AI and product engineering for SMEs.
@@ -137,7 +137,7 @@ const Home = () => (
 
     <SectionWrapper
       id="differentiation"
-      eyebrow="The AIzantra Difference"
+      eyebrow="The Aizantra Difference"
       title="Enterprise-Grade, Without Enterprise Overhead"
     >
       <div className="grid grid-1">

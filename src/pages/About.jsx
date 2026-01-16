@@ -11,7 +11,7 @@ const About = () => (
     >
       <div className="stack">
         <p>
-          <b>AIzantra Intelligence Pvt. Ltd.</b> is a consulting-first,
+          <b>Aizantra Intelligence Pvt. Ltd.</b> is a consulting-first,
           engineering-led AI and software product development company enabling
           SMEs and mid-market enterprises to operate smarter, faster, and more
           efficiently—without the complexity, cost, or rigidity of

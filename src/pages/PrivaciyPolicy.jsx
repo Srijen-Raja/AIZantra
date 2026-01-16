@@ -29,7 +29,7 @@ const PrivaciyPolicy = () => {
 			subtitle="Effective Date: 26.12.2025">
 					{/* <h3>Privacy Policy</h3> */}
 					<p className="big-para">
-					AIzantra Intelligence Private Limited (“AIzantra”, “we”, “our”) provides consulting,
+					Aizantra Intelligence Private Limited (“Aizantra”, “we”, “our”) provides consulting,
 					advisory, software products, and technology services. This Privacy Policy describes how we
 					collect, use, and protect personal data through our website www.aizantraintelligence.com.
 					This policy complies with applicable Indian laws including the Information Technology Act,
