@@ -91,7 +91,7 @@ const Header = () => {
 
   // Track mobile breakpoint to apply inline hiding only on mobile
   useEffect(() => {
-    const check = () => setIsMobile(window.innerWidth <= 900);
+    const check = () => setIsMobile(window.innerWidth <= 1000);
     check();
     window.addEventListener('resize', check, { passive: true });
     return () => window.removeEventListener('resize', check);
