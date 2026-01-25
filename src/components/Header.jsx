@@ -59,7 +59,7 @@ const Header = () => {
     { to: '/#product', label: 'Product', hash: true },
     { to: '/services', label: 'Services' },
     { to: '/industries', label: 'Industries' },
-    { to: '/case-studies', label: 'Case Studies' },
+    { to: '/case-studies', label: 'Client Success' },
     { to: '/insights', label: 'Insights' },
     { to: '/contact', label: 'Contact' }
   ];
@@ -91,7 +91,7 @@ const Header = () => {
 
   // Track mobile breakpoint to apply inline hiding only on mobile
   useEffect(() => {
-    const check = () => setIsMobile(window.innerWidth <= 1200);
+    const check = () => setIsMobile(window.innerWidth <= 1440);
     check();
     window.addEventListener('resize', check, { passive: true });
     return () => window.removeEventListener('resize', check);

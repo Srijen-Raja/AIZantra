@@ -5,7 +5,7 @@ import Home from './pages/Home.jsx';
 import About from './pages/About.jsx';
 import Services from './pages/Services.jsx';
 import Industries from './pages/Industries.jsx';
-import CaseStudies from './pages/CaseStudies.jsx';
+import ClientSuccess from './pages/ClientSuccess.jsx';
 import Insights from './pages/Insights.jsx';
 import Contact from './pages/Contact.jsx';
 import PrivaciyPolicy from './pages/PrivaciyPolicy.jsx';
@@ -28,7 +28,7 @@ const AppRouter = () => {
           <Route path="/about" element={<About />} />
           <Route path="/services" element={<Services />} />
           <Route path="/industries" element={<Industries />} />
-          <Route path="/case-studies" element={<CaseStudies />} />
+          <Route path="/case-studies" element={<ClientSuccess />} />
           <Route path="/insights" element={<Insights />} />
           <Route path="/privacy-policy" element={<PrivaciyPolicy />} />
           <Route path="/terms-of-service" element={<TermsOfService />} />
