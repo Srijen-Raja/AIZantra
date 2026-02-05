@@ -10,7 +10,8 @@ const posts = [
   {
     title: 'Why Generative AI Initiatives Fail at Scale Without Data Governance',
     excerpt:
-      'Why pilots show early promise but fail to scale: fragmented data, unclear ownership, and weak governance — and how an operational data foundation enables safe, enterprise-grade adoption.'
+      'Why pilots show early promise but fail to scale: fragmented data, unclear ownership, and weak governance — and how an operational data foundation enables safe, enterprise-grade adoption.',
+      link: 'https://www.linkedin.com/posts/aizantra-intelligence-private-limited_generativeai-datagovernance-techleadership-activity-7425201721028771840-kG4m?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAJ5Tn4BBYQHLHOok8oMdxi4GUU2TOw-rHM'
   },
   {
     title: 'Platform Modernization: The Foundation of Digital Transformation',
