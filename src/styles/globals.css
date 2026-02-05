@@ -179,6 +179,11 @@ p {
   line-height: 1.7;
 }
 
+/* Utility: section title accent color (site orange) */
+.section-title--accent {
+  color: var(--accent-primary);
+}
+
 /* Tag styles */
 .tag-row {
   display: flex;
@@ -750,6 +755,13 @@ p {
   transition: all 0.2s ease;
   font-family: inherit;
   touch-action: manipulation; /* Prevents double-tap zoom on mobile */
+}
+
+/* Small button variant */
+.btn-sm {
+  padding: 0.4rem 0.8rem;
+  min-height: 32px;
+  font-size: 0.85rem;
 }
 
 .btn-primary {

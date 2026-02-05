@@ -15,7 +15,7 @@ const ClientSuccess = () => (
       </p>
     </SectionWrapper> */}
 
-    <SectionWrapper id="what-clients-say" eyebrow="Success Stories">
+    <SectionWrapper id="what-clients-say" >
       <h2 className="section-title">What Clients Say</h2>
       <div className="testimonials-container">
         <div className="testimonial">
@@ -50,6 +50,7 @@ const ClientSuccess = () => (
     </SectionWrapper>
 
     <SectionWrapper id="success-stories" >
+      <h2 className="section-title section-title--accent">Success Stories</h2>
       <div className="grid grid-3">
         <CaseStudyCard
           title="Bank AI Automation — Real-World Impact"

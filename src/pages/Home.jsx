@@ -62,15 +62,15 @@ const Home = () => (
 
     <SectionWrapper
       id="product"
-      eyebrow="Platform"
-      title="TRADIX® — Connected B2B Operations Platform for SMEs"
+      eyebrow="Platform"      
     >
+      <h2 className="section-title">TRADIX®: Connected B2B Operations Platform for SMEs</h2>
       <div className="grid grid-2">
         <div className="card">
           <img src={tradixImg} alt="TRADIX logo" style={{maxWidth: 360, maxHeight: 160, width: '100%', objectFit: 'contain', marginBottom: 8, display: 'block'}} />
           <h3 style={{marginTop: 4, marginBottom: 8}}>Overview — TRADIX®</h3>
           <p>
-            <b>TRADIX®</b> is a ready-to-deploy Connected B2B Operations Platform for SMEs. It connects business buyers, sellers, and fulfillment partners, enabling seamless onboarding, procurement, inventory visibility, and payment workflows.
+            <b>TRADIX®</b> is a Connected B2B Operations Platform for SMEs. It connects business buyers, sellers, and fulfillment partners, enabling seamless onboarding, procurement, inventory visibility, and payment workflows.
           </p>
         </div>
 
@@ -145,7 +145,7 @@ const Home = () => (
           <h3>Engineering-Led. Product-Driven. Outcome-Focused.</h3>
           <ul>
             <li>Consulting grounded in hands-on experience designing, building, and operating data- and AI-enabled products and platforms</li>
-            <li>A standard B2B supply-chain platform (TRADIX®) complemented by custom software, data platforms, and AI/GenAI engineering</li>
+            <li>A Connected B2B Operations Platform for SMEs(TRADIX®) complemented by custom software, data platforms, and AI/GenAI engineering</li>
             <li>Responsible AI with governance, security, and data accountability embedded by design</li>
             <li>Helping SMEs move faster, spend smarter, and scale with confidence</li>
           </ul>
